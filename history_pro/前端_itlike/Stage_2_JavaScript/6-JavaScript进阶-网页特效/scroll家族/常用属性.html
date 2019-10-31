@@ -1,0 +1,73 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/html">
+    window.onload = function () {
+        // 滚动属性
+        // 监听滚动
+        window.onscroll = function () {
+
+            // console.log(document.body.scrollTop);
+
+            console.log(document.documentElement.scrollTop);
+            console.log(document.documentElement.scrollLeft);
+
+            /*
+            * 3.2 处理scroll家族浏览器适配问题
+            ie9+ 和 最新浏览器
+                window.pageXOffset; （scrollLeft）
+
+                window.pageYOffset; （scrollTop）
+            Firefox浏览器 和 其他浏览器
+
+            document.documentElement.scrollTop;
+
+            Chrome浏览器 和 没有声明 DTD <DOCTYPE >
+
+            document.body.scrollTop;
+
+            兼容写法
+            * var scrollTop = window.pageYOffset ||
+            * document.documentElement.scrollTop ||
+            * document.body.scrollTop || 0;
+            * var scrollLeft = window.pageXOffset ||
+            * document.documentElement.scrollLeft ||
+            * document.body.scrollLeft || 0;
+            * */
+        };
+
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+
+
+<script>
+window.onscroll = function () {
+    console.log(document.documentElement.scrollTop);
+    console.log(document.documentElement.scrollLeft);
+    console.log(window.pageXOffset);
+    console.log(window.pageYOffset);
+}
+</script>
+
+</body>
+</html>

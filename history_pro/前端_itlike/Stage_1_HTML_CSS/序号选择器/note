@@ -1,0 +1,9 @@
+序号选择器:
+    不区分类型
+        :first-child
+        :last-child
+        :nth-last-child(n)
+        :nth-child(n)
+    区分类型
+    奇偶选择
+        :nth-child(odd)

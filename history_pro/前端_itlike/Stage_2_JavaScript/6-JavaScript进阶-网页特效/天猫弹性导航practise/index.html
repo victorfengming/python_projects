@@ -1,0 +1,88 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫</title>
+    <style>
+        /*去掉默认样式*/
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        /*设置背景颜色*/
+        body {
+            background-color: pink;
+        }
+
+        #nav {
+            /*设置导航栏的宽高*/
+            width: 900px;
+            height: 63px;
+            /*设置导航栏背景颜色*/
+            /*background-color: #ffffff;*/
+            /*设置背景的图标*/
+            background: url("images/doubleOne.png") no-repeat right center #fff;
+            /*设置圆角*/
+            border-radius: 10px;
+            /*设置子绝父相*/
+            position: relative;
+            /*设置导航栏的位置参数*/
+            margin: 100px auto ;
+            /*设置超出区域不显示*/
+            overflow: hidden;
+        }
+        #nav ul{
+            /*父元素相对定位*/
+            position: relative;
+        }
+        #nav ul li{
+            /*父元素相对定位*/
+            position: relative;
+            /*设置左浮动*/
+            float: left;
+            /*设置宽高*/
+            width: 88px;
+            height: 63px;
+            /*设置文本排列到中间*/
+            /*zheg s zhogndian 这个是重点*/
+            text-align: center;
+            /*设置行高*/
+            line-height: 63px;
+
+        }
+        #tm{
+            /*设置图标宽度*/
+            width: 88px;
+            height: 63px;
+            background: url("images/tMall.png");
+            /*background-color: orange;*/
+            /*子元素这回可以绝对的定位了*/
+            position: absolute;
+            /*border-radius: 10px;*/
+        }
+    </style>
+</head>
+<body>
+<nav id="nav">
+    <span id="tm"><!--            这里面是那个精灵的图标--></span>
+    <div>
+        <ul>
+            <li>双11</li>
+            <li>服装</li>
+            <li>数码</li>
+            <li>家具</li>
+            <li>母婴</li>
+            <li>手机</li>
+            <li>美妆</li>
+            <li>进口</li>
+            <li>飞猪</li>
+
+        </ul>
+    </div>
+</nav>
+</body>
+</html>

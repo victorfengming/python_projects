@@ -1,0 +1,7 @@
+表单标签
+	<form>	定义供用户输入的 HTML 表单。
+	<input>	定义输入控件。
+	<textarea>	定义多行的文本输入控件。
+	<select>	定义选择列表（下拉列表）。
+	<option>	定义选择列表中的选项。
+	<label>	定义 input 元素的标注。

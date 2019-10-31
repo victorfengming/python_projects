@@ -1,0 +1,81 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offset、client和scroll的区别分析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+
+        }
+
+        #box {
+            border: 10px solid #000;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            padding: 20px;
+
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+    <p>人生苦短，我用Python</p>
+</div>
+<script>
+    window.onload = function () {
+        var box = $('box');
+        //
+        // // 1.width 和 height
+        // // offset = 边框 + 内边距 + 内容宽度和厚度
+        // console.log('offset 属性', box.offsetWidth, box.offsetHeight);
+        // // client = 内边距 + 内容的宽度和厚度/
+        // console.log('client 属性', box.clientWidth, box.clientHeight);
+        // // scroll = 能够滚动的内容的宽度 和 高度
+        // console.log('scroll 属性', box.scrollWidth, box.scrollHeight);
+
+        // top和left
+        // offsetLeft = 当前元素距离有定位的父盒子左边的距离
+        // offsetTop = 当前元素距离有定位的父盒子左上边的距离
+        console.log('offset 属性', box.offsetLeft, box.offsetTop);
+        // client = 内边距 + 内容的宽度和厚度/
+        console.log('client 属性', box.clientLeft, box.clientTop);
+        // scroll = 能够滚动的内容的宽度 和 高度
+        console.log('scroll 属性', box.scrollLeft, box.scrollTop);
+    };
+
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+
+</script>
+</body>
+</html>

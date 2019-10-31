@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 580px;
+            height: 100%;
+            border: 1px solid #ccc;
+            padding-top: 472px;
+
+            margin: 100px auto;
+            /*background: url("https://m.360buyimg.com/babel/jfs/t1/22842/35/12027/81758/5c94b4feE0e815034/80d5d28a298d62bd.jpg") no-repeat;*/
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        li img{
+            width: 72px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li id="li1"><img src="https://m.360buyimg.com/babel/jfs/t1/22842/35/12027/81758/5c94b4feE0e815034/80d5d28a298d62bd.jpg" alt=""></li>
+            <li id="li2"><img src="https://img1.360buyimg.com/da/jfs/t1/26295/2/12076/90637/5c94d99fE0b340e29/3813e2cdf7a15f11.jpg" alt=""></li>
+            <li id="li3"><img src="https://img1.360buyimg.com/pop/jfs/t1/20083/28/11964/95576/5c937e34Ecfb4ea55/60029bdeab133ce1.jpg" alt=""></li>
+            <li id="li4"><img src="https://m.360buyimg.com/babel/jfs/t1/21781/31/12063/208318/5c94824fE19ffa929/b78ae9fcd2741d9c.jpg!q90" alt=""></li>
+            <li id="li5"><img src="https://img1.360buyimg.com/pop/jfs/t1/14416/1/12638/224290/5c99bb92E7351e8ce/7bc2c1802891547a.jpg" alt=""></li>
+            <li id="li6"><img src="https://m.360buyimg.com/babel/jfs/t1/19650/7/12061/231299/5c947a72E166d26c8/d27ffe55ba96dc6a.jpg!q95" alt=""></li>
+            <li id="li7"><img src="https://m.360buyimg.com/babel/jfs/t1/27864/29/12145/99262/5c9483c8Efca554ba/9aa89dfea2ad4f76.jpg" alt=""></li>
+            <li id="li8"><img src="https://m.360buyimg.com/babel/jfs/t1/17796/35/12057/97107/5c9487fcEfdc97274/6137e1839456b29a.jpg" alt=""></li>
+        </ul>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            // 拿标签
+            // 获取需要的标签
+            var li1 = document.getElementById("li1");
+            var li2 = document.getElementById("li2");
+            var li3 = document.getElementById("li3");
+            var li4 = document.getElementById("li4");
+            var li5 = document.getElementById("li5");
+            var li6 = document.getElementById("li6");
+            var li7 = document.getElementById("li7");
+            var li8 = document.getElementById("li8");
+
+            var box = document.getElementById("box");
+
+            // 监听鼠标动作
+            li1.onmouseover = function () {
+                box.style.background = 'url("https://m.360buyimg.com/babel/jfs/t1/22842/35/12027/81758/5c94b4feE0e815034/80d5d28a298d62bd.jpg") no-repeat'
+            };
+            li2.onmouseover = function () {
+                box.style.background = 'url("https://img1.360buyimg.com/da/jfs/t1/26295/2/12076/90637/5c94d99fE0b340e29/3813e2cdf7a15f11.jpg") no-repeat'
+            };
+            li3.onmouseover = function () {
+                box.style.background = 'url("https://img1.360buyimg.com/pop/jfs/t1/20083/28/11964/95576/5c937e34Ecfb4ea55/60029bdeab133ce1.jpg") no-repeat'
+            };
+            li4.onmouseover = function () {
+                box.style.background = 'url("https://m.360buyimg.com/babel/jfs/t1/21781/31/12063/208318/5c94824fE19ffa929/b78ae9fcd2741d9c.jpg!q90") no-repeat'
+            };
+            li5.onmouseover = function () {
+                box.style.background = 'url("https://img1.360buyimg.com/pop/jfs/t1/14416/1/12638/224290/5c99bb92E7351e8ce/7bc2c1802891547a.jpg") no-repeat'
+            };
+            li6.onmouseover = function () {
+                box.style.background = 'url("https://m.360buyimg.com/babel/jfs/t1/19650/7/12061/231299/5c947a72E166d26c8/d27ffe55ba96dc6a.jpg!q95") no-repeat'
+            };
+            li7.onmouseover = function () {
+                box.style.background = 'url("https://m.360buyimg.com/babel/jfs/t1/27864/29/12145/99262/5c9483c8Efca554ba/9aa89dfea2ad4f76.jpg") no-repeat'
+            };
+            li8.onmouseover = function () {
+                box.style.background = 'url("https://m.360buyimg.com/babel/jfs/t1/17796/35/12057/97107/5c9487fcEfdc97274/6137e1839456b29a.jpg") no-repeat'
+            };
+
+
+
+        }
+    </script>
+</body>
+</html>

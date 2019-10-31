@@ -1,0 +1,13 @@
+ 网站,网页
+
+ web:
+    html:结构
+    css:表现
+    js:行为
+
+
+文档结构:
+    html
+    head
+    body
+    media

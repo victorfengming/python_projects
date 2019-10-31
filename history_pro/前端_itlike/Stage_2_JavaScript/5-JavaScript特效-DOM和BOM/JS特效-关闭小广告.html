@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id = "box">
+        <img id = "icon" src="img/img1.jpg" alt="" width="258">
+        <img id = "close" src="img/close.jpg" alt="" width="40">
+    </div>
+
+    <script>
+        window.onload = function () {
+            // 获取需要的标签
+            var box = document.getElementById("icon");
+            var close = document.getElementById("close");
+
+            // 2给事件源绑定事件
+            close.onclick = function () {
+                box.style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+</html>

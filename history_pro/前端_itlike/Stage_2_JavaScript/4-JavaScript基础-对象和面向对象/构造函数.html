@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 构造函数
+    // 这里有一个约定:
+    //     构造函数首字母大写
+    function Person() {
+        var obj = new Object();
+        // 属性
+        obj.name = null;    // 这里给空,等着外界给值
+        obj.age = null;    // 这里给空,等着外界给值
+        obj.sex = null;    // 这里给空,等着外界给值
+        // 方法
+        obj.study = function () {
+            console.log(this.name + '学习')
+            // 这里面的this就是相当于对象本身,有了这个this,就可以在类属性和类方法中各种跳了
+            // 在Python中不叫this,叫self,在Java中叫this
+
+        };
+
+        obj.sleep = function () {
+            console.log('在睡觉');
+        };
+
+
+        return obj
+    }
+
+    var p = Person();
+    var p1 = Person();
+
+
+    console.log(p);
+    console.log(p1);
+    console.log(p === p1);
+    // 通过构造函数产生的对象,每个对象是不相等的
+
+    // 如何给对象增加属性和方法
+    p.name = '张三';
+    p.age = 28;
+    p.sex = 'man';
+
+    p.study();
+</script>
+</body>
+</html>

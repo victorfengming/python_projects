@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 800px;
+            border: 1px solid #cccccc;
+            margin: 100px auto;
+            padding: 20px;
+
+        }
+
+
+        #my_textarea{
+            width: 80%;
+            height: 120px;
+        }
+
+        .box-top{
+            margin-bottom: 20px;
+        }
+
+        #ul{
+            margin: 0 80px;
+
+        }
+        #ul li{
+            border-bottom: 1px dashed #cccccc;
+            color: red;
+            line-height: 44px;
+            /*margin: 0 80px;*/
+
+        }
+        #ul li a{
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="box-top">
+            <lable>发表评论:</lable>
+            <textarea name="" id="my_textarea" cols="60" rows="10"></textarea>
+            <button>发表</button>
+        </div>
+        <ul id="ul">
+            <li>今天的天气很好哦!<a href="#">删除</a></li>
+        </ul>
+    </div>
+
+<script>
+    // 发表评论/
+    window.onload = function () {
+        // 入口函数
+        $('btn').onclick = function () {
+            // huoquyoghushuru
+            var content = $('my_textarea').value;
+            // 判断是不是空空
+            if(content.length === 0){
+                alert("请输入评论内容~");
+                return ;
+            }
+            var li = document.createElement('li');
+            li.innerHTML = content;
+            $('ul').appendChild();
+        }
+    };
+
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+定义和用法
+border-radius 属性是一个简写属性，用于设置四个 border-*-radius 属性。
+
+提示：该属性允许您为元素添加圆角边框！
+
+默认值：	0
+继承性：	no
+版本：	CSS3
+JavaScript 语法：	object.style.borderRadius="5px"
+语法
+border-radius: 1-4 length|% / 1-4 length|%;
+注释：按此顺序设置每个 radii 的四个值。如果省略 bottom-left，则与 top-right 相同。如果省略 bottom-right，则与 top-left 相同。如果省略 top-right，则与 top-left 相同。
+
+值	描述	测试
+length	定义圆角的形状。	测试
+%	以百分比定义圆角的形状。	测试
+例子 1
+border-radius:2em;
+等价于：
+
+border-top-left-radius:2em;
+border-top-right-radius:2em;
+border-bottom-right-radius:2em;
+border-bottom-left-radius:2em;
+例子 2
+border-radius: 2em 1em 4em / 0.5em 3em;
+等价于：
+
+border-top-left-radius: 2em 0.5em;
+border-top-right-radius: 1em 3em;
+border-bottom-right-radius: 4em 0.5em;
+border-bottom-left-radius: 1em 3em;

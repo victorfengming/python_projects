@@ -1,0 +1,66 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本闭包</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+    </style>
+<!--    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+</head>
+<body>
+
+
+<script>
+    function test1() {
+        var age = 19;
+        return function () {
+            console.log(age);
+        }
+    }
+
+    // console.log(age);
+    var func = test1();
+    func()
+    // console.log(func);
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

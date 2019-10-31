@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 定义一个对象
+    /*
+    * 这个对象就跟C语言中的结构体类似
+    * 还有点儿像python中的字典啊
+    * */
+    var dog = {
+        // 成员属性
+        name:'旺旺',
+        age: 10,
+        dogFriends: ['啊黄','啊才','飞毛腿'],
+
+        // 成员方法
+        eat: function () {
+            window.document.write('吃');
+        },
+        run: function () {
+            window.document.write('跑')
+        }
+    };
+
+
+    console.log(typeof dog);
+
+    myDog = new Object(dog);
+    myDog.eat();
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!--created by xiaoming-->
+
+<!--本项目资源托管至-->
+<!--https://imgchr.com/-->
+<!--免费公共图床, 提供高速稳定的图片分享与云存储服务.-->
+<!--全球CDN加速, 支持外链, 无限空间, 无限流量, 原图保存-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("https://s2.ax1x.com/2019/04/04/A2qTVs.jpg");
+            /*margin-bottom: 200px;*/
+        }
+
+
+
+        /************************搜索-start**********************/
+        #content {
+            width: 641px;
+            height: 189px;
+            margin: 20px auto;
+            /*background-color: green;*/
+        }
+
+        #content .logo {
+            /*background-color: red;*/
+            text-align: center;
+            width: 641px;
+            height: 112px;
+        }
+
+        #content .logo img {
+            width: 400px;
+        }
+
+        #content .search {
+            width: 100%;
+            height: 77px;
+            /*background-color: skyblue;*/
+            padding-top: 10px;
+        }
+
+        #content .search form {
+            width: 100%;
+            height: 44px;
+            /*background-color: purple;*/
+        }
+
+        #content .search form .search-input {
+            width: 536px;
+            height: 44px;
+            padding-left: 8px;
+
+            /*去除外边框*/
+            outline: none;
+
+            border: 1px solid #e0e0e0;
+
+            float: left;
+        }
+
+        #content .search form .search-input:focus {
+            border-color: #398bfb;
+        }
+
+        #content .search-submit {
+            width: 105px;
+            height: 44px;
+            background-color: #398bfb;
+            border: none;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+
+            /*去除外边框*/
+            outline: none;
+        }
+
+        /************************搜索-end**********************/
+
+        #short_cut{
+            /*background-color: red;*/
+            width: 80%;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            /*border: 3px solid #398bfb;*/
+            border-radius: 5px;
+        }
+        
+        #short_cut div{
+            float: left;
+            width: 80px;
+            height: 80px;
+            /*background-color: greenyellow;*/
+            margin-top: 10px;
+            margin-left: 20px;
+
+        }
+
+        #short_cut div a{
+            text-decoration: none;
+            text-align: center;
+            line-height: 0;
+        }
+        #short_cut div a img{
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<section id="content">
+    <!--logo-->
+    <div class="logo">
+        <img src="https://s2.ax1x.com/2019/04/04/A2qzqJ.png" alt="云logo">
+    </div>
+    <div class="search">
+        <form action="http://bing.com" id="biaodan">
+            <input name="content" type="text" class="search-input">
+            <input name="btn" type="submit" class="search-submit" value="我要导航" onclick=gogogo>
+        </form>
+    </div>
+    <!--搜索-->
+</section>
+<div id="short_cut">
+    <div><a href="https://mail.163.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LpZ9.png" alt="" title="网易邮箱"></a></div>
+    <div><a href="https://cn.bing.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LVMD.png" alt="" title="必应搜索"></a></div>
+    <div><a href="https://hao.360.cn/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2L3z8.png" alt="" title="360导航"></a></div>
+    <div><a href="https://baidu.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LnZd.png" alt="" title="百度一下"></a></div>
+    <div><a href="https://study.163.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LGQS.png" alt="" title="网易云课堂"></a></div>
+    <div><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LUds.png" alt="" title="维基百科"></a></div>
+    <div><a href="http://tool.uixsj.cn/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LJsg.png" alt="" title="现实君工具"></a></div>
+    <div><a href="https://www.jd.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LlJP.png" alt="" title="京东购物"></a></div>
+    <div><a href="http://www.runoob.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2Laon.png" alt="" title="菜鸟教程"></a></div>
+    <div><a href="http://www.w3school.com.cn/" target="_blank"><img src="https://cn.bing.com/th?id=OIP.DRAxeLbCehMQIUCuIQnobQAAAA&pid=Api&rs=1&p=0
+" alt="" title="W3C教程"></a></div>
+    <div><a href="https://translate.google.cn/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2LQit.png" alt="" title="谷歌翻译"></a></div>
+    <div><a href="https://imgchr.com/" target="_blank"><img src="https://s2.ax1x.com/2019/04/04/A2xC3q.png" alt="" title="路过图床"></a></div>
+
+
+</div>
+<script>
+    window.onload = function () {
+        biaodan = $("biaodan");
+
+    };
+
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+
+    function gogogo() {
+        console.log('哈哈');
+        // biaodan.action = "https://cn.bing.com/search?q="+ document.forms[0] +"";
+        // console.log(document.forms[0].xxxx.value);
+        //
+        // console.log(document.forms[0].nnnn.value);
+        //
+        // console.log(document.getElementById("xxxx").value);
+        //
+        // console.log(document.getElementsByName("nnnn")[0].value);
+    }
+
+</script>
+</body>
+</html>
+

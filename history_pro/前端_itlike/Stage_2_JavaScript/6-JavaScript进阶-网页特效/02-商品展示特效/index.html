@@ -1,0 +1,143 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        #box {
+            width: 800px;
+            height: 200px;
+            border: 1px solid #CCCCCC;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        #box ul {
+            width: 2600px;
+            position: absolute;
+            left: 0;
+            top: 20px;
+            /*float: left;*/
+
+        }
+
+        #box ul li {
+            float: left;
+        }
+
+        #box_bottom {
+            position: absolute;
+            background-color: #d0d0e8;
+            left: 0;
+            bottom: 0;
+            height: 25px;
+            width: 100%;
+        }
+
+        #mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*width: 89px;*/
+            width: 0;
+            /*宽度需要动态设置*/
+            height: 25px;
+            background-color: orange;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="box_top">
+        <li><img src="images/img1.jpg" alt=""></li>
+        <li><img src="images/img2.jpg" alt=""></li>
+        <li><img src="images/img3.jpg" alt=""></li>
+        <li><img src="images/img4.jpg" alt=""></li>
+        <li><img src="images/img5.jpg" alt=""></li>
+        <li><img src="images/img6.jpg" alt=""></li>
+        <li><img src="images/img7.jpg" alt=""></li>
+        <li><img src="images/img8.jpg" alt=""></li>
+        <li><img src="images/img1.jpg" alt=""></li>
+        <li><img src="images/img2.jpg" alt=""></li>
+        <li><img src="images/img3.jpg" alt=""></li>
+        <li><img src="images/img4.jpg" alt=""></li>
+        <li><img src="images/img5.jpg" alt=""></li>
+        <li><img src="images/img6.jpg" alt=""></li>
+        <li><img src="images/img7.jpg" alt=""></li>
+        <li><img src="images/img8.jpg" alt=""></li>
+    </ul>
+    <div id="box_bottom">
+        <span id="mask"></span>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        // 1.获取需要的标签
+        var box = $("box");
+        var box_top = $("box_top");
+        var box_bottom = $("box_bottom");
+        var mask = box_bottom.children[0];
+
+        // 2.设置滚动条长度
+        // 滚动条的长度 比上 盒子的长度 = 盒子的长度 闭上 内容的长度
+        var mask_len = (box.offsetWidth / box_top.offsetWidth) * box.offsetWidth;
+        // 打印也不用了,bug找到了
+        // console.log(mask_len);
+        // mask.style.left = "59px";
+
+        mask.style.width = mask_len + 'px';
+
+        // 3.鼠标操作
+        mask.onmousedown = function (event) {
+            var e = event || window.event;
+            // 3.1求初始值
+            var beginX = e.clientX - mask.offsetLeft;
+            // 3.2移动
+            document.onmousemove = function (event) {
+                var e = event || window.event;
+
+                // 3.3求出移动的距离
+                var endX = e.clientX - beginX;
+
+                // 处理便捷值
+                if (endX < 0) {
+                    endX = 0;
+                } else if (endX > box_bottom.offsetWidth - mask.offsetWidth) {
+                    endX = box_bottom.offsetWidth - mask.offsetWidth;
+                }
+                // 3.4动起来
+                mask.style.left = endX + 'px';
+
+
+                // 内容走的距离 \/ 滚动条走的距离 =（内容的长度 - 盒子的长度） \/ (盒子长度 - 滚动条的长度)
+                // 内容走的距离 = （内容的长度 - 盒子的长度） \/ (盒子长度 - 滚动条的长度) * 滚动条走的距离
+                var content_len = (box_top.offsetWidth - box.offsetWidth) / (box.offsetWidth - mask.offsetWidth) * endX;
+                box_top.style.left = -content_len + 'px';
+                // 还有得做界限
+                return false;
+            }
+        };
+        document.onmouseup = function () {
+            // 3.4动起来
+            document.onmousemove = null;
+
+        };
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        };
+    }
+</script>
+</body>
+</html>

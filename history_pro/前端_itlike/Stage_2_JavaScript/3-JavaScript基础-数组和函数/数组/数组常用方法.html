@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    // 数组的本质其实就是一个对象
+    // join(separator)
+    arr1 = [1,4,6,7,9,12,4,2,'旋之华'];
+    res = arr1.join('#');
+    console.log('zhiqian de');
+    console.log(arr1);
+
+    arr1.push('victor');
+
+    console.log('zhihou de');
+    console.log(arr1);
+
+    res1 = arr1.pop();
+    window.document.write(res1)
+
+    res1 = arr1.pop();
+    window.document.write(res1)
+
+    res1 = arr1.pop();
+    window.document.write(res1)
+</script>
+<script type="text/html">
+    var arr = ['张三','李四','王五','宋小宝'];
+    window.document.write(arr+'<br>');
+
+    console.log(arr.shift());
+
+    window.document.write(arr+'<br>');
+
+    var l = arr.unshift('张二');
+    window.document.write(arr+'<br>');
+    window.document.write(l+'<br>');
+
+
+</script>
+<script type="text/html">
+    arr = ['张三','李四','王五','刘六','杨七'];
+
+    res = arr.reverse();
+
+    window.document.write(arr+'<br>');
+    window.document.write(res+'<br>');
+</script>
+<script>
+    arr = ['张三','李四','王五','知乎','王五','王五','刘六','杨七'];
+
+    res = arr.indexOf('王五');
+    res = arr.lastIndexOf('王五');
+
+    window.document.write(arr+'<br>');
+    window.document.write(res+'<br>');
+</script>
+
+
+
+
+</body>
+</html>

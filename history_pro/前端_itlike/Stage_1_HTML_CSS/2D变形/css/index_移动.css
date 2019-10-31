@@ -1,0 +1,57 @@
+
+div{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+}
+
+/*我现在有一个需求,就是当用户的鼠标落到我这个元素上面的时候,这个元素来给我移动起来*/
+/*有可能向上移动,或者向左移动*/
+/*这个移动是2D范围的*/
+/*只有XY方向*/
+
+/*想要移动就得触发他*/
+/*active就是你鼠标点上去没有松开的状态*/
+/*div:active{*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: red;*/
+/*}*/
+/*哈哈,这个好玩,我一点就变色,这个动作强,看着就高大上*/
+
+
+/*行了,下面写正经的代码*/
+div:active{
+    /*transform: translateX(100px);*/
+    /*transform: translateY(100px);*/
+    transform: translate(100px, 200px);
+    /*设置过度效果*/
+    transition: all 1s linear;
+    /*1s=1000ms*/
+}
+/*这个动画,变化优点儿大,所以看着不流畅,这是为什么呢*/
+/*就是人眼虽然有滞留的效果,但是如果我这个代码中不设置时间*/
+/*默认是以最快的速度变化过来,显得有一点儿不流畅,所以这里*/
+/*我们可以设置动画精力的时间*/
+
+/*从W3C中查询了一下:*/
+    /*transition-property 	规定设置过渡效果的 CSS 属性的名称。*/
+    /*transition-duration 	规定完成过渡效果需要多少秒或毫秒。*/
+    /*transition-timing-function 	规定速度效果的速度曲线。*/
+    /*transition-delay 	定义过渡效果何时开始。*/
+
+/*曲线也有好多种*/
+/*值 	描述*/
+/*linear 	规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。*/
+/*ease 	规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。*/
+/*ease-in 	规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。*/
+/*ease-out 	规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。*/
+/*ease-in-out 	规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。*/
+/*cubic-bezier(n,n,n,n) 	在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。*/
+
+/*提示：请在实例中测试不同的值，这样可以更好地理解它们的工作原理。        */
+
+/*这内容多,还是粘贴URL吧*/
+/*http://www.w3school.com.cn/cssref/pr_transition-timing-function.asp*/
+
+

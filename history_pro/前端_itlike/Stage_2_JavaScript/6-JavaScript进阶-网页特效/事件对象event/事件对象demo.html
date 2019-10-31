@@ -1,0 +1,58 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+        #btn{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">点我</button>
+
+<script>
+    /*
+    clientX 光标相对于该网页的水平位置
+    clientY 光标相对于该网页的垂直位置
+    type    事件的类型
+    target  该事件被传送到的对象
+    screenX  光标相对于该屏幕的水平位置
+    screenY  光标相对于该屏幕的垂直位置
+    pageX   光标相对于网页的水平位置
+    pageY   光标相对于网页的垂直位置
+    width   该窗口或者框架的宽度
+    height  该窗口或者框架的高度
+    data    返回拖拽对象的url字符串
+
+    */
+    window.onload = function () {
+        var btn = $("btn");
+        btn.onclick = function () {
+            var e = event || window.event;
+            console.log(e);
+            console.log('点击了');
+        };
+        btn.onmouseover = function () {
+            var e = event || window.event;
+            // console.log(e);
+            // console.log('鼠标进入了');
+            // console.log(e.type);
+            console.log(e.target);
+        };
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+</body>
+</html>

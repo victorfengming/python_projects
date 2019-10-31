@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            vertical-align: top;
+        }
+
+        body {
+            background: url("images/1.jpg") no-repeat;
+            background-size: cover;
+
+        }
+
+        #box {
+            background-color: rgba(255, 255, 255, .5);
+
+        }
+        #box ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+
+        }
+        #box ul li img{
+            width: 180px;
+            height: 120px;
+            margin: 10px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+        <li><img src="images/5.jpg" alt=""></li>
+    </ul>
+</div>
+
+
+<script>
+    window.onload = function () {
+        // 获取需要的标签
+        var box = document.getElementById("box");
+        var allLis = document.getElementsByTagName("li");
+
+        // console.log(allLis);
+        // 遍历监听
+        for(var i=0; i<allLis.length; i++){
+            // 取到单个li标签/
+            var sLi = allLis[i];
+            // 绑定事件
+            sLi.index = i + 1;
+            sLi.onclick = function () {
+                // 拿到body的背景
+                // console.log(i);
+                // document.body.style.background = 'url("images/1.jpg") no-repeat'
+                // 同步和异步的概念
+                /*有两种方式
+                    1.闭包
+                    2.拿到li属性中
+                 */
+                document.body.style.background = 'url("images/'+ this.index+'.jpg") no-repeat';
+                document.body.style.backgroundsize = '100%';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

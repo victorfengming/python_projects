@@ -1,0 +1,26 @@
+django 是什么
+    django是一个web框架
+        web 框架?
+
+    python 下最强大的web框架
+    全球第五大web构架
+    Instgram 图片社交网站(美国)
+    服务器中的程序处理你发出的请求
+django 发展史
+    2004 新闻社 Lawrence
+    2005 开源 ,开源之后就有很多人觉得他不错,就发展到现在,很厉害了
+    维护网站
+    新闻老也换,他就想开发一个东西,
+
+django 的优势
+    开发效率高
+        官方标语
+        The framework for perfection with deadline!
+        一个为完美主义者,又工期很紧的工作者
+
+        django已经继承了一些web组件,如用户认证,分页,中间件,缓存,session,等等
+
+        你需要做的就是写出业务逻辑
+    功能强大
+        django 能够支持大量的结构
+

@@ -1,0 +1,62 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+    </style>
+<!--    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+</head>
+<body>
+
+
+<script>
+    var age = 18;
+    function test() {
+        var name = '战三';
+        console.log(name);
+
+    }
+    test();
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

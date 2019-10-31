@@ -1,0 +1,1223 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>装饰器和抽象类 | Python大法好</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../面向对象/错误和异常处理.html" />
+    
+    
+    <link rel="prev" href="../面向对象/类和对象-下.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="8.4"
+        data-chapter-title="装饰器和抽象类"
+        data-filepath="面向对象/装饰器和抽象类.md"
+        data-basepath=".."
+        data-revision="Mon Jul 31 2017 16:48:41 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        兄弟连Python基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Python简介及安装</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Python简介及安装/Python简介.html">
+            
+                
+                    <a href="../Python简介及安装/Python简介.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Python简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Python简介及安装/安装及版本检测.html">
+            
+                
+                    <a href="../Python简介及安装/安装及版本检测.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        安装及版本检测
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Python简介及安装/第一个Python程序.html">
+            
+                
+                    <a href="../Python简介及安装/第一个Python程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        第一个Python程序
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Python基本语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="Python基本语法/注释及语句分类.html">
+            
+                
+                    <a href="../Python基本语法/注释及语句分类.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        注释及语句分类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Python基本语法/命名方式和关键字.html">
+            
+                
+                    <a href="../Python基本语法/命名方式和关键字.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        命名方式和关键字
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 变量和数据类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="变量和数据类型/变量.html">
+            
+                
+                    <a href="../变量和数据类型/变量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="变量和数据类型/数据类型.html">
+            
+                
+                    <a href="../变量和数据类型/数据类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        数据类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="变量和数据类型/数据类型转换.html">
+            
+                
+                    <a href="../变量和数据类型/数据类型转换.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        数据类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="变量和数据类型/运算和运算符.html">
+            
+                
+                    <a href="../变量和数据类型/运算和运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        运算和运算符
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 流程控制</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="流程控制/流程控制.html">
+            
+                
+                    <a href="../流程控制/流程控制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        顺序结构和分支结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="流程控制/循环结构.html">
+            
+                
+                    <a href="../流程控制/循环结构.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        循环结构
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 函数及作用域</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="函数及变量作用域/函数.html">
+            
+                
+                    <a href="../函数及变量作用域/函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="函数及变量作用域/函数文档.html">
+            
+                
+                    <a href="../函数及变量作用域/函数文档.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        函数文档
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="函数及变量作用域/变量作用域.html">
+            
+                
+                    <a href="../函数及变量作用域/变量作用域.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        变量作用域
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="函数及变量作用域/内部函数和闭包操作.html">
+            
+                
+                    <a href="../函数及变量作用域/内部函数和闭包操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        内部函数和闭包操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="函数及变量作用域/lambda表达式.html">
+            
+                
+                    <a href="../函数及变量作用域/lambda表达式.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        lambda表达式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 内置函数及操作</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="内置函数及操作/字符串相关.html">
+            
+                
+                    <a href="../内置函数及操作/字符串相关.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        字符串相关
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="内置函数及操作/format格式字符串.html">
+            
+                
+                    <a href="../内置函数及操作/format格式字符串.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        format格式字符串
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="内置函数及操作/内建函数.html">
+            
+                
+                    <a href="../内置函数及操作/内建函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        内建函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="内置函数及操作/列表.html">
+            
+                
+                    <a href="../内置函数及操作/列表.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="内置函数及操作/元组.html">
+            
+                
+                    <a href="../内置函数及操作/元组.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        元组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="内置函数及操作/字典.html">
+            
+                
+                    <a href="../内置函数及操作/字典.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        字典
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="内置函数及操作/集合.html">
+            
+                
+                    <a href="../内置函数及操作/集合.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        集合
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="内置函数及操作/文件操作.html">
+            
+                
+                    <a href="../内置函数及操作/文件操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        文件操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 常用的模块</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="常用的模块/String模块.html">
+            
+                
+                    <a href="../常用的模块/String模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        String模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="常用的模块/数学模块.html">
+            
+                
+                    <a href="../常用的模块/数学模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        数学模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="常用的模块/os模块.html">
+            
+                
+                    <a href="../常用的模块/os模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        os模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="常用的模块/zip压缩.html">
+            
+                
+                    <a href="../常用的模块/zip压缩.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        zip压缩
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="常用的模块/shutil模块.html">
+            
+                
+                    <a href="../常用的模块/shutil模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        shutil模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="常用的模块/与时间相关的模块.html">
+            
+                
+                    <a href="../常用的模块/与时间相关的模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        与时间相关的模块
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> 面向对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="面向对象/类和对象-上.html">
+            
+                
+                    <a href="../面向对象/类和对象-上.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        类和对象-上
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="面向对象/魔术方法.html">
+            
+                
+                    <a href="../面向对象/魔术方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        魔术方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="面向对象/类和对象-下.html">
+            
+                
+                    <a href="../面向对象/类和对象-下.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        类和对象-下
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.4" data-path="面向对象/装饰器和抽象类.html">
+            
+                
+                    <a href="../面向对象/装饰器和抽象类.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        装饰器和抽象类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="面向对象/错误和异常处理.html">
+            
+                
+                    <a href="../面向对象/错误和异常处理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        错误和异常处理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 初级项目-计算器</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="初级项目-计算器/模块和包.html">
+            
+                
+                    <a href="../初级项目-计算器/模块和包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        模块和包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="初级项目-计算器/tkinter模块.html">
+            
+                
+                    <a href="../初级项目-计算器/tkinter模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        tkinter模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="初级项目-计算器/jian-yi-ji-suan-qi-shi-li.html">
+            
+                
+                    <a href="../初级项目-计算器/jian-yi-ji-suan-qi-shi-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        简易计算器示例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Python大法好</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x88C5;&#x9970;&#x5668;">&#x88C5;&#x9970;&#x5668;</h1>
+<hr>
+<blockquote>
+<p>&#x88C5;&#x9970;&#x5668;&#x5C31;&#x662F;&#x5BF9;&#x51FD;&#x6570;&#x6216;&#x8005;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x7C7B;&#x8FDB;&#x884C;&#x4FEE;&#x9970;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x51FD;&#x6570;
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+laxi()
+laxi()
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x6269;&#x5C55;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;(&#x4E0D;&#x662F;&#x88C5;&#x9970;&#x5668;)
+#&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x51FD;&#x6570;
+def decor(func):
+    print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+    func()#&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;laxi()
+    print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+#&#x5C06;laxi&#x51FD;&#x6570;&#x4F20;&#x5165;decor&#x51FD;&#x6570;&#x4E2D;
+laxi = decor(laxi)
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+laxi()
+laxi()
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x6269;&#x5C55;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;(&#x4E0D;&#x662F;&#x88C5;&#x9970;&#x5668;)&#xFF0C;&#x4F7F;&#x7528;&#x8BED;&#x6CD5;&#x7CD6;
+#&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x51FD;&#x6570;
+def decor(func):
+    print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+    func()#&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;laxi()
+    print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+@decor #&#x5C06;laxi&#x51FD;&#x6570;&#x4F20;&#x5165;decor&#x51FD;&#x6570;&#x4E2D;#laxi = decor(laxi)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+laxi()
+laxi()
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x56DB;&#x6B65;&#xFF1A;&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x7684;&#x88C5;&#x9970;&#x5668;
+def decor(func):#&#x51FD;&#x6570;&#x540D;&#x968F;&#x4FBF;&#x5199;
+    #&#x58F0;&#x660E;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x6765;&#x5236;&#x4F5C;&#x5B8C;&#x6574;&#x7684;&#x88C5;&#x9970;&#x51FD;&#x6570;
+    def _decor():#&#x51FD;&#x6570;&#x540D;&#x968F;&#x4FBF;&#x5199;
+        print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+        func()#&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;laxi()
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+    return  _decor
+@decor#laxi = decor(laxi)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+laxi()
+laxi()
+laxi()
+laxi()
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E94;&#x6B65;&#xFF1A;&#x5B9E;&#x73B0;&#x5E26;&#x6709;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x54E6;&#x88C5;&#x9970;&#x5668;
+#&#x88C5;&#x9970;&#x5668;
+def decor(func):
+    #&#x8FD9;&#x5C31;&#x662F;&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x51FD;&#x6570;
+    def _decor():
+        print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+        #&#x8C03;&#x7528;&#x62C9;&#x7A00;&#x51FD;&#x6570;&#x65F6;&#x63A5;&#x6536;&#x62C9;&#x7A00;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+        result = func()#&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;laxi()
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+        #&#x4E3A;&#x88C5;&#x9970;&#x4E4B;&#x540E;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;
+        return result
+    #&#x8FD4;&#x56DE;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x672A;&#x6765;&#x7684;laxi&#x51FD;&#x6570;
+    return _decor
+@decor
+#&#x62C9;&#x7A00;&#x51FD;&#x6570;
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    return &apos;&#x70ED;&#x7FD4;&#x4E00;&#x7897;&apos;
+#&#x8C03;&#x7528;&#x62C9;&#x7A00;&#x51FD;&#x6570;
+jg = laxi()
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x88C5;&#x9970;&#x5668;
+def decor(func):
+    #&#x8FD9;&#x5C31;&#x662F;&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x51FD;&#x6570;&#xFF08;&#x539F;&#x51FD;&#x6570;&#x6709;&#x4EC0;&#x4E48;&#x5F62;&#x53C2;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x8981;&#x6709;&#x4EC0;&#x4E48;&#x5F62;&#x53C2;&#xFF09;
+    def _decor(who,weight):
+        print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+        #&#x8C03;&#x7528;&#x62C9;&#x7A00;&#x51FD;&#x6570;&#x65F6;&#x63A5;&#x6536;&#x62C9;&#x7A00;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+        result = func(who,weight)#&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;laxi()
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+        #&#x4E3A;&#x88C5;&#x9970;&#x4E4B;&#x540E;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;
+        return result
+    #&#x8FD4;&#x56DE;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x672A;&#x6765;&#x7684;laxi&#x51FD;&#x6570;
+    return _decor
+@decor
+#&#x62C9;&#x7A00;&#x51FD;&#x6570;
+def laxi(who,weight):
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;:&apos;+who+&apos;&#x62C9;&#x4E86;&apos;+weight+&apos;&#x65A4;&#x4FBF;&#x4FBF;&apos;)
+    return &apos;&#x70ED;&#x7FD4;&#x4E00;&#x7897;&apos;
+jg = laxi(&apos;&#x9A6C;&#x4FCA;&#x9F99;&apos;,&apos;10&apos;)
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x516D;&#x6B65;&#xFF1A;&#x6536;&#x96C6;&#x53C2;&#x6570;&#x88C5;&#x9970;&#x5668;&#xFF08;&#x7ED9;&#x88C5;&#x9970;&#x5668;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x52A0;&#x53C2;&#x6570;&#xFF09;
+def decor(func):
+    #&#x8FD4;&#x56DE;&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x51FD;&#x6570;
+    def _decor(*who,*weight):
+        print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+        result = func(*who,**weight)
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+        return result
+    #&#x8FD4;&#x56DE;&#x88C5;&#x9970;&#x4E4B;&#x540E;&#x7684;&#x51FD;&#x6570;
+    return _decor
+@decor
+def laxi(*who,**weight):
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    print(&apos;&#x53C2;&#x4E0E;&#x62C9;&#x5C4E;&#x7684;&#x4EBA;&#x6709;:&apos;,who)
+    print(&apos;&#x5206;&#x522B;&#x62C9;&#x4E86;&#x591A;&#x5C11;:&apos;,weight)
+    return  &apos;&#x70ED;&#x7FD4;&#x4E00;&#x5927;&#x9505;&#xFF01;&apos;
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+jg = laxi(&apos;&#x9A6C;&#x4FCA;&#x9F99;&apos;,&apos;&#x960E;&#x745E;&#x9F99;&apos;,&apos;&#x970D;&#x4E91;&#x745E;&apos;,&apos;&#x66F9;&#x777F;&apos;,&apos;&#x5B8B;&#x7B11;&#x5BD2;&apos;,mjl = &apos;5&#x65A4;&apos;,yrl = &apos;2&#x65A4;&apos;,hyr= &apos;1&#x5428;&apos;,cr = &apos;10&#x514B;&apos;,sxh = &apos;&#x4FBF;&#x79D8;&apos;)
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E03;&#x6B65;&#xFF1A;&#x5E26;&#x6709;&#x53C2;&#x6570;&#x7684;&#x88C5;&#x9970;&#x5668;&#xFF08;&#x7ED9;&#x88C5;&#x9970;&#x5668;&#x52A0;&#x53C2;&#x6570;&#xFF09;
+#&#x5B9A;&#x4E49;&#x88C5;&#x9970;&#x5668;&#xFF08;&#x63A5;&#x6536;&#x88C5;&#x9970;&#x5668;&#x53C2;&#x6570;&#xFF09;
+def decor(arg):
+    #&#x63A5;&#x6536;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;
+    def _decor(func):
+        #&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x548C;&#x5403;&#x996D;&#x51FD;&#x6570;&#x7684;&#x88C5;&#x9970;
+        def __decorla():#&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x51FD;&#x6570;
+            print(&apos;&#x6C42;&#x795E;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&apos;)
+            result = func()
+            print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;)
+            return result
+        def __decorchi():#&#x672A;&#x6765;&#x7684;&#x5403;&#x996D;&#x51FD;&#x6570;
+            print(&apos;&#x6211;&#x8981;&#x5F00;&#x52A8;&#x4E86;&#xFF5E;&apos;)
+            result = func()
+            print(&apos;&#x6211;&#x5403;&#x5B8C;&#x4E86;&#xFF5E;&apos;)
+            return result
+        #&#x6839;&#x636E;&#x88C5;&#x9970;&#x5668;&#x7684;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x88C5;&#x9970;&#x7ED3;&#x679C;
+        if arg == &apos;la&apos;:
+            return __decorla
+        elif arg == &apos;chi&apos;:
+            return __decorchi
+    #&#x8FD4;&#x56DE;&#x88C5;&#x9970;&#x5668;&#x7684;&#x7B2C;&#x4E00;&#x5C42;
+    return _decor
+@decor(&apos;la&apos;)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    return  &apos;&#x70ED;&#x7FD4;&#x4E00;&#x7897;&apos;
+@decor(&apos;chi&apos;)
+def chifan():
+    print(&apos;&#x5427;&#x5527;&#x5427;&#x5527;&#x5427;&#x5527;&#x5427;&#x5527;&#xFF01;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    return &apos;&#x7A7A;&#x7897;&#x4E00;&#x4E2A;&apos;
+#&#x8C03;&#x7528;laxi
+jg = laxi()
+print(jg)
+#&#x8C03;&#x7528;chifan
+jg = chifan()
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x516B;&#x6B65;&#xFF1A;&#x5C06;&#x7C7B;&#x4F5C;&#x4E3A;&#x88C5;&#x9970;&#x5668;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x8FDB;&#x6765;
+#&#x795D;&#x613F;&#x7948;&#x798F;&#x7C7B;
+class Wish:
+    #&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;
+    def before():
+        print(&apos;&#x70E7;&#x9999;&#x62DC;&#x670D;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&#xFF01;&apos;)
+    #&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;
+    def after():
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&#xFF5E;&apos;)
+#&#x88C5;&#x9970;&#x5668;
+def decor(cls):
+
+    def _decor(func):
+        #&#x8FD9;&#x662F;&#x672A;&#x6765;&#x7684;&#x62C9;&#x7A00;&#x51FD;&#x6570;
+        def __decor():
+            cls.before()
+            result = func()
+            cls.after()
+            return result
+        #&#x8FD4;&#x56DE;&#x88C5;&#x9970;&#x4E4B;&#x540E;&#x7684;&#x51FD;&#x6570;
+        return __decor
+    return _decor
+@decor(Wish)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    return &apos;&#x70ED;&#x7FD4;&#x4E00;&#x624B;&apos;
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+jg = laxi()
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x4E5D;&#x6B65;&#xFF1A;&#x5C06;&#x7C7B;&#x4F5C;&#x4E3A;&#x88C5;&#x9970;&#x5668;&#x4F7F;&#x7528;
+class Decor:
+    def __init__(self,arg):
+        #&#x5B58;&#x5165;&#x5BF9;&#x8C61;
+        self.arg = arg
+    #&#x6B64;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x539F;&#x51FD;&#x6570;
+    def __call__(self,func):
+        #&#x5C06;&#x539F;&#x65B9;&#x6CD5;&#x5B58;&#x5230;&#x5BF9;&#x8C61;&#x5F53;&#x4E2D;
+        self.func = func
+        #&#x8FD4;&#x56DE;&#x88C5;&#x9970;&#x4E4B;&#x540E;&#x7684;&#x51FD;&#x6570;
+        return self.mylaxi
+    #&#x88C5;&#x9970;&#x51FD;&#x6570;
+    def mylaxi(self):
+        print(&apos;&#x70E7;&#x9999;&#x62DC;&#x670D;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&#xFF01;&apos;)
+        #&#x8C03;&#x7528;&#x539F;&#x51FD;&#x6570;
+        result = self.func()
+        print(&apos;&#x62C9;&#x7A00;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&#xFF5E;&apos;)
+        return result
+@Decor(5)
+def laxi():
+    print(&apos;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#x5657;&#x54E7;&#xFF5E;&#xFF5E;&#xFF5E;&apos;)
+    return &apos;&#x70ED;&#x7FD4;&#x4E00;&#x624B;&apos;
+jg = laxi()
+print(jg)
+&apos;&apos;&apos;</span>
+
+<span class="hljs-string">&apos;&apos;&apos;
+#&#x7B2C;&#x5341;&#x6B65;&#xFF1A;&#x4E3A;&#x7C7B;&#x6DFB;&#x52A0;&#x88C5;&#x9970;&#x5668;&#xFF08;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#xFF09;
+#&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x5BF9;&#x8C61;
+obj = {}#&#x5047;&#x8BBE;&#x5B58;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x952E;&#x540D;only  &#x503C;&#x4E3A;&#x5BF9;&#x8C61;&#x672C;&#x8EAB; {&apos;only&apos;:&#x5BF9;&#x8C61;}
+def decor(cls):
+    #&#x88C5;&#x9970;&#x5668;&#x7684;&#x64CD;&#x4F5C;
+    def _decor():
+        if &apos;only&apos; in obj:
+            #&#x5BF9;&#x8C61;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;
+            return obj[&apos;only&apos;]
+        else:
+            #&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x521B;&#x5EFA;&#xFF0C;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;
+            obj[&apos;only&apos;] = cls()
+            return obj[&apos;only&apos;]
+    #&#x8FD4;&#x56DE;&#x88C5;&#x9970;&#x7684;&#x64CD;&#x4F5C;
+    return _decor
+#&#x5F53;&#x524D;&#x7C7B;&#x53EA;&#x80FD;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+@decor
+class LiXue:
+    name = &apos;&#x5C0F;&#x96EA;&apos;
+    sex = &apos;&#x5973;&apos;
+    age = &apos;21&#x5C81;&apos;
+    def stuPy():
+        print(&apos;&#x597D;&#x597D;&#x5B66;&#x4E60;&#x5929;&#x5929;&#x5411;&#x4E0A;&#xFF01;&apos;)
+#&#x5B9E;&#x4F8B;&#x5316;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+one = LiXue()
+print(one)
+two = LiXue()
+print(two)
+three = LiXue()
+print(three)
+&apos;&apos;&apos;</span>
+<span class="hljs-comment">#&#x7B2C;&#x5341;&#x4E00;&#x6B65;&#xFF1A;&#x591A;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#x5D4C;&#x5957;</span>
+<span class="hljs-comment">#&#x88C5;&#x9970;&#x5668;1</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decor1</span><span class="hljs-params">(func)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_decor1</span><span class="hljs-params">()</span>:</span>
+        print(<span class="hljs-string">&apos;&#x8131;&#x88E4;&#x5B50;&#xFF0C;&#x51C6;&#x5907;&#x653E;&#x70AE;&apos;</span>)
+        result = func()
+        print(<span class="hljs-string">&apos;&#x62C9;&#x5C4E;&#x5B8C;&#x6BD5;&#xFF0C;&#x63D0;&#x88E4;&#x5B50;&#x8D70;&#x4EBA;&#xFF5E;&apos;</span>)
+        <span class="hljs-keyword">return</span> result
+    <span class="hljs-keyword">return</span> _decor1
+<span class="hljs-comment">#&#x88C5;&#x9970;&#x5668;2</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decor2</span><span class="hljs-params">(func)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_decor2</span><span class="hljs-params">()</span>:</span>
+        print(<span class="hljs-string">&apos;&#x70E7;&#x9999;&#x62DC;&#x4F5B;&#xFF0C;&#x795D;&#x613F;&#x4E00;&#x5207;&#x987A;&#x5229;&#xFF01;&apos;</span>)
+        result = func()
+        print(<span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#xFF0C;&#x70E7;&#x9999;&#x8FD8;&#x613F;&apos;</span>)
+        <span class="hljs-keyword">return</span> result
+    <span class="hljs-keyword">return</span> _decor2
+<span class="hljs-decorator">@decor2</span>
+<span class="hljs-decorator">@decor1</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">laxi</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;&#x6251;&#x54E7;&#x6251;&#x54E7;&#x6251;&#x54E7;&#x6251;&#x54E7;&#x6251;&#x54E7;&#xFF5E;&#xFF5E;&apos;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&#x70ED;&#x7FD4;&#x4E00;&#x5927;&#x676F;&apos;</span>
+jg = laxi()
+print(jg)
+</code></pre>
+<h1 id="&#x65B9;&#x6CD5;&#x7684;&#x5206;&#x7C7B;">&#x65B9;&#x6CD5;&#x7684;&#x5206;&#x7C7B;</h1>
+<hr>
+<p>&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x4E00;&#x5171;&#x5206;&#x4E3A;&#x4E09;&#x79CD;&#xFF1A;</p>
+<p><strong>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;/&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;</strong></p>
+<pre><code>&#x53EA;&#x6709;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x4E4B;&#x540E;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x63A5;&#x6536;&#x7684;&#x4E00;&#x5B9A;&#x662F;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#xFF01;
+</code></pre><p><strong>&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;/&#x9759;&#x6001;&#x65B9;&#x6CD5;</strong></p>
+<pre><code>&#x65E0;&#x9700;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x65E2;&#x4E0D;&#x63A5;&#x6536;&#x5BF9;&#x8C61;&#x540D;&#x4E5F;&#x4E0D;&#x63A5;&#x53D7;&#x7C7B;&#x3002; &#x4E00;&#x822C;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x8C03;&#x7528;&#xFF0C;&#x8DDF;&#x7C7B;&#x4E2D;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x5173;&#x8054;&#x4E0D;&#x5927;
+</code></pre><p><strong>&#x7C7B;&#x65B9;&#x6CD5;</strong></p>
+<pre><code>&#x65E0;&#x9700;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+&#x4F46;&#x662F;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x63A5;&#x6536;&#x7684;&#x4E00;&#x5B9A;&#x662F;&#x7C7B;&#x672C;&#x8EAB;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x9700;&#x8981;&#x501F;&#x52A9;&#x7C7B;&#x4E2D;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x64CD;&#x4F5C;
+</code></pre><pre><code class="lang-python"><span class="hljs-comment">#&#x5305;&#x542B;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+    <span class="hljs-comment">#&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x9759;&#x6001;&#x65B9;&#x6CD5;</span>
+<span class="hljs-decorator">    @staticmethod #&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x4E0D;&#x5199;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">walk</span><span class="hljs-params">()</span>:</span>
+        print(<span class="hljs-string">&apos;&#x8D70;&#x8DEF;&#x65B9;&#x6CD5;&#xFF0C;&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&apos;</span>)
+
+    <span class="hljs-comment">#&#x975E;&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;  &#x5BF9;&#x8C61;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say</span><span class="hljs-params">(self)</span>:</span>
+        print(self)
+        print(<span class="hljs-string">&apos;&#x8BF4;&#x8BDD;&#x529F;&#x80FD;&#xFF0C;&#x975E;&#x7ED1;&#x5B9A;&#x7C7B;&#x65B9;&#x6CD5;&apos;</span>)
+
+    <span class="hljs-comment">#&#x7C7B;&#x65B9;&#x6CD5;</span>
+<span class="hljs-decorator">    @classmethod #&#x5FC5;&#x987B;&#x5199;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drink</span><span class="hljs-params">(cls)</span>:</span>
+        print(cls)
+        print(<span class="hljs-string">&apos;&#x559D;&#x6C34;&#x65B9;&#x6CD5;&#xFF0C;&#x7C7B;&#x65B9;&#x6CD5;&apos;</span>)
+
+<span class="hljs-comment">#&#x8C03;&#x7528;&#x975E;&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;(&#x5BF9;&#x8C61;/&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;)</span>
+tw = Person()
+tw.say()
+
+<span class="hljs-comment">#&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x9759;&#x6001;&#x65B9;&#x6CD5;</span>
+Person.walk()
+
+<span class="hljs-comment">#&#x8C03;&#x7528;&#x7C7B;&#x65B9;&#x6CD5;</span>
+Person.drink()
+</code></pre>
+<h1 id="&#x62BD;&#x8C61;&#x7C7B;">&#x62BD;&#x8C61;&#x7C7B;</h1>
+<hr>
+<blockquote>
+<p>&#x5177;&#x6709;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x5C31;&#x662F;&#x62BD;&#x8C61;&#x7C7B;&#x3002;</p>
+<p>&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x53EA;&#x6709;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x548C;&#x53C2;&#x6570;&#xFF0C;&#x6CA1;&#x6709;&#x65B9;&#x6CD5;&#x5185;&#x5BB9;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x9002;&#x5408;&#x4E8E;&#x9886;&#x5BFC;&#x6307;&#x5B9A;&#x5F00;&#x53D1;&#x89C4;&#x8303;&#x53CA;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x5B8C;&#x6210;&#x7C7B;&#x3002;</p>
+<p>abc  abstract class  &#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x7F29;&#x5199;</p>
+</blockquote>
+<h2 id="&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;">&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;</h2>
+<hr>
+<pre><code class="lang-python"><span class="hljs-comment">#&#x4F7F;&#x7528;&#x62BD;&#x8C61;&#x7C7B;&#x5FC5;&#x987B;&#x4F7F;&#x7528;abc&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">import</span> abc
+
+<span class="hljs-comment">#&#x4E66;&#x5199;&#x62BD;&#x8C61;&#x7C7B;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x5143;&#x7C7B;  &#x56FA;&#x5B9A;&#x683C;&#x5F0F;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span><span class="hljs-params">(metaclass = abc.ABCMeta)</span>:</span>
+
+    <span class="hljs-comment">#&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;/&#x975E;&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="hljs-decorator">    @abc.abstractmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">smoking</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">pass</span>
+
+    <span class="hljs-comment">#&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;</span>
+<span class="hljs-decorator">    @abc.abstractclassmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say</span><span class="hljs-params">(cls)</span>:</span>
+        <span class="hljs-keyword">pass</span>
+
+    <span class="hljs-comment">#&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;/&#x7ED1;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="hljs-decorator">    @abc.abstractstaticmethod    </span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">cry</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">pass</span>
+</code></pre>
+<h2 id="&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x7279;&#x5F81;&#xFF1A;">&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x7279;&#x5F81;&#xFF1A;</h2>
+<hr>
+<pre><code>1.&#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5177;&#x4F53;&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;
+2.&#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6210;&#x5458;&#x5C5E;&#x6027;,&#x800C;&#x4E14;&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x62BD;&#x8C61;&#x4E0D;&#x62BD;&#x8C61;&#x4E4B;&#x5206;
+3.&#x62BD;&#x8C61;&#x7C7B;&#x65E0;&#x6CD5;&#x5B9E;&#x4F8B;&#x5316;&#x4F7F;&#x7528;.
+4.&#x62BD;&#x8C61;&#x7C7B;&#x53EA;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x7C7B;&#x7EE7;&#x627F;&#x4F7F;&#x7528;&#xFF0C;&#xFF08;&#x552F;&#x4E00;&#x7684;&#x7528;&#x6CD5;&#xFF09;
+5.&#x53EA;&#x6709;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;&#x8BE5;&#x5B50;&#x7C7B;&#x624D;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5B9E;&#x4F8B;&#x5316;&#x4F7F;&#x7528;&#x3002;&#x6709;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x90FD;&#x4E0D;&#x53EF;&#x4EE5;&#x5B9E;&#x4F8B;&#x5316;
+6.&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x6307;&#x5B9A;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x7684;&#x6807;&#x51C6;&#xFF08;&#x65B9;&#x6CD5;&#x540D;&#xFF0C;&#x53C2;&#x6570;&#x7B49;&#xFF09;
+</code></pre><h1 id="&#x591A;&#x6001;">&#x591A;&#x6001;</h1>
+<hr>
+<blockquote>
+<p>&#x591A;&#x6001;&#xFF0C;&#x591A;&#x79CD;&#x72B6;&#x6001;&#xFF01;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../面向对象/类和对象-下.html" class="navigation navigation-prev " aria-label="Previous page: 类和对象-下"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../面向对象/错误和异常处理.html" class="navigation navigation-next " aria-label="Next page: 错误和异常处理"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

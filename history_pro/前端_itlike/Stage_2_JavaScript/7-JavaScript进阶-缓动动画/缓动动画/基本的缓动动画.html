@@ -1,0 +1,91 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缓动动画</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btn1">往右走</button>
+    <button id="btn2">往左走</button>
+    <div id="box"></div>
+
+<script>
+$(function () {
+    // 获取元素
+    // 监听按钮的点击
+    $("#btn1").click(function () {
+        // 0设置变量
+        var target = 800, timer = null;
+        var x = 0;
+        // console.log('点击了');
+        // 清除定时器
+        clearInterval(timer);
+        // 设置定时器
+        timer = setInterval(function () {
+            // 求出不长
+            // console.log((target - $("#box").css("left")) * 0.2);
+            lef = $("#box").offset().left;
+            // console.log("lef是" + lef);
+            speed = (target - lef) * 0.2;
+            speed = Math.ceil(speed);
+            // 1.4 动起来
+            $("#box").css("left", lef + speed +'px');
+            $("#box").text($("#box").css("left"));
+            // 1.5 判断
+            if (lef === target){
+                clearInterval(timer);
+            }
+        }, 20);
+    })
+})
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

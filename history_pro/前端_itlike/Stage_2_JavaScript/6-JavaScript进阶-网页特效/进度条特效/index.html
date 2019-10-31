@@ -1,0 +1,134 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条特效</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        #progress {
+            width: 1000px;
+            height: 35px;
+            line-height: 35px;
+            /*background-color: gainsboro;*/
+            margin: 100px auto;
+            position: relative;
+        }
+
+        #progress_bar {
+            width: 900px;
+            height: 100%;
+            background-color: rgb(240,148,175);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        #progress_value {
+            position: absolute;
+            top: 0;
+            right: 30px;
+        }
+
+        #progress_bar_fg {
+            width: 0px;
+            height: 100%;
+            background-color: rgb(220,114,149);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        span {
+            width: 25px;
+            height: 60px;
+            background-color: rgb(220,114,149);
+            position: absolute;
+            left: 0px;
+            top: -12px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="progress">
+    <div id="progress_bar">
+        <div id="progress_bar_fg"></div>
+        <span></span>
+    </div>
+    <div id="progress_value">
+        0%
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        /*
+        要实现的功能:
+            手柄移动
+                拖拽
+            前景色移动
+                背景填充
+            百分比数值
+
+         */
+        // 1.获取需要的标签
+        var progress = $("progress");
+        var progress_bar = progress.children[0];
+        var progress_bar_fg = progress_bar.children[0];
+        var mask = progress_bar.children[1];
+        var progress_value = progress.children[1];
+
+        // 2监听鼠标的按下
+        // 为什么要接受事件对象
+        // 因为需要获取当前的位置参数
+        mask.onmousedown = function (event) {
+            var e = event || window.event;
+            // 2.1获取初始位置
+            // 计算前景的右边的那条线
+            var offsetLeft = event.clientX - mask.offsetLeft;
+            // 2.2监听鼠标的移动(拖拽)
+            document.onmousemove = function (event) {
+                var e = event || window.event;
+
+                // 2.3获取移动的位置
+                var x = e.clientX - offsetLeft;
+
+                // 处理边界值
+                if(x<0){
+                    x = 0;
+                }else if(x > progress_bar.offsetWidth - mask.offsetWidth){
+                    x = progress_bar.offsetWidth - mask.offsetWidth;
+                }
+                // 2.35 qianjignse
+
+
+                // 2.4走起来
+                mask.style.left = x + 'px';
+                progress_bar_fg.style.width = x + 'px';
+                // 2.41 设置后面的数值
+                // 第一种方法 省略小数点后面的数
+                // progress_value.innerHTML = parseInt(x / (progress_bar.offsetWidth - mask.offsetWidth) * 100) + '%';
+                // 第二种方式 四射侮辱
+                progress_value.innerHTML = Math.round(x * 100/(progress_bar.offsetWidth - mask.offsetWidth)) + '%';
+
+                return false;
+            };
+            // 2.5监听鼠标抬起
+            document.onmouseup = function () {
+                document.onmousemove = null;
+            }
+        };
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+</body>
+</html>

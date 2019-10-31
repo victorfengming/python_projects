@@ -1,0 +1,56 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 100px auto;
+    transition: all 0.5s linear;
+
+}
+
+/*我现在要做什么事情呢? */
+/*就是当我的鼠标按下和缩放的时候我希望他变大变小*/
+
+/*看到这个是不是想起之前做的MAC桌面的时候那个下面的图标*/
+/*网上走的动画*/
+
+/*现在我们综合的把它运用起来*/
+div:hover{
+    /*transform: scale(2);*/
+    /*这个就是变胖了*/
+    /*transform: scaleX(6);*/
+    /*这个变高了*/
+    transform: scaleY(6);
+
+
+}
+/*我了个去,我傻不愣登的在那里点了半天,这个™的是鼠标进入区域触发的啊*/
+/*服了奥*/
+
+section{
+    width: 380px;
+    height: 200px;
+    margin: 100px auto;
+    border: 10px solid #b3d7ff;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*现在我想干嘛呢,就是当我的鼠标进入这个盒子,我就让图片放大*/
+
+section img{
+    width: 80%;
+    /*过度效果*/
+    transition: all 0.2s linear;
+}
+
+section:hover img{
+    transform: scale(0.6);
+}
+
+/*加过度效果:*/
+    /*过度效果加在谁的身上*/
+    /*你要对谁做过度,就把效果加载谁的身上*/
+
+
+

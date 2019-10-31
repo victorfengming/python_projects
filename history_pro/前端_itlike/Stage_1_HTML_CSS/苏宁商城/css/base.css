@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*声明编码格式*/
+
+/*通用样式*/
+/*初始化*/
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*这个星号是一个通配符,优先级最低,查询效率不高*/
+/*在实际的开发过程中,我们我经常使用它*/
+
+/*所以这次,我们会用到哪些标签,就拿来哪个标签*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, a, img, button {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*请除列表风格*/
+ul, ol{
+    list-style: none;
+}
+
+/*表单相关元素处理*/
+fieldset, img, input, button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+/*超链接标签*/
+a{
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff6600;
+}
+
+/*h家族*/
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-size: 100%;
+
+}
+
+/*避免高度崩塌,高度重叠*/
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*隐藏*/
+.hide{
+    display: none !important;
+}
+
+/*版心*/
+.w{
+    width: 119rem;
+    margin: 0 auto;
+}
+
+/*左浮动*/
+.fl{
+    float: left;
+}
+
+/*左浮动*/
+.fr{
+    float: right;
+}
+
+/*水平对齐方式*/
+.tl{
+    text-align: left;
+}
+
+.tc{
+    text-align: center;
+}
+
+.tr{
+    text-align: right;
+}
+
+/*清除语义性标签默认样式*/
+s, r{
+    font-style: normal;
+    text-decoration: none;
+}
+

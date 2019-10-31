@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <button class="btn">按钮</button>
+        <span id="span">
+            <a href="#">百度一下</a>
+        </span>
+        <p>我是mt</p>
+    </div>
+    <script type="text/html">
+        window.onload = function () {
+            var a = document.getElementsByTagName("a")[0];
+            // 获取父节点
+            // var parentNode = a.parentNode;
+            // console.log(parentNode);
+            var parentNode = a.parentNode.parentNode;
+            console.log(parentNode);
+
+        }
+    </script>
+    <script type="text/html">
+        window.onload = function () {
+            // 1.通过子盒子设置父盒子的颜色
+
+            var btn = document.getElementsByClassName("btn")[0];
+
+            var span = document.getElementById("span");
+            var box = span.parentNode;
+            box.style.backgroundColor = "blue";
+
+            btn.onclick = goo;
+            function goo() {
+                box.style.backgroundColor = "orange";
+            }
+
+        };
+
+
+    </script>
+    <script type="text/html">
+        window.onload = function () {
+            // 1.获取标签
+            var close = document.getElementById("close");
+            // 2.监听点击事件
+            close.onclick = function () {
+                this.parentNode.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/html">
+        window.onload = function () {
+            var span = document.getElementById("span");
+            // 下一个
+            var dom = span.nextElementSibling || span.nextSibling;
+            console.log(dom);
+            // 上一个
+            var dom2 = span.previousElementSibling || span.previousSibling;
+            console.log(dom2);
+        }
+    </script>
+    <script>
+        window.onload = function () {
+            // 获取标签
+            var box = document.getElementById("box");
+            // 获取所有子节点
+            var allNodeList = box.childNodes;
+            console.log(allNodeList);
+
+            var newList = [];
+            for(var i=0; i<allNodeList.length; i++){
+                var node = allNodeList[i];
+                if(node.nodeType===1){
+                    newList.push(node)
+                }
+            }
+
+            console.log(newList);
+
+        }
+    </script>
+</body>
+</html>

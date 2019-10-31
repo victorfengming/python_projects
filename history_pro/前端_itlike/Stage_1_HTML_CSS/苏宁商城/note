@@ -1,0 +1,14 @@
+这一开始结构需要搭建好
+    因为这个项目,很多个阶段都是会用到的
+
+
+目录要创建好
+    css
+        index.css
+    js
+    images
+        demo.png
+    lib
+    source
+    index.html
+    favicon.ico

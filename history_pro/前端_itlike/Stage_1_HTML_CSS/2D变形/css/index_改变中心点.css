@@ -1,0 +1,52 @@
+img{
+    width: 20%;
+    margin: 200px 300px;
+    /*margin-left: 100px;*/
+    border: 10px solid red;
+    border-radius: 50%;
+    /*设置过度效果*/
+    transition: all 3s linear;
+    /*改变中心点*/
+    transform-origin: left top;
+    /*以左上角旋转*/
+
+}
+
+img:active{
+    /*transform: rotateX(-180deg);*/
+    /*transform: rotateY(-180deg);*/
+    transform: rotate(2000deg);
+}
+
+/*语法*/
+
+/*transform-origin: x-axis y-axis z-axis;*/
+
+/*值 	描述*/
+/*x-axis 	*/
+
+/*定义视图被置于 X 轴的何处。可能的值：*/
+
+    /*left*/
+    /*center*/
+    /*right*/
+    /*length*/
+    /*%*/
+
+/*y-axis 	*/
+
+/*定义视图被置于 Y 轴的何处。可能的值：*/
+
+    /*top*/
+    /*center*/
+    /*bottom*/
+    /*length*/
+    /*%*/
+
+/*z-axis 	*/
+
+/*定义视图被置于 Z 轴的何处。可能的值：*/
+
+    /*length*/
+
+

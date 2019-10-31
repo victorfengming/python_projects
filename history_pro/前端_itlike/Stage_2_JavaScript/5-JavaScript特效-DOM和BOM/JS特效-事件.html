@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("btn");
+    btn.onclick = deal;
+
+    function deal() {
+        alert('点我嘎哈!')
+    }
+        }
+    </script>
+</head>
+<body>
+<button name = "btn" id = 'btn' class="my-btn">点我</button>
+<div class = 'my-btn'>div内容</div>
+<script type="text/html">
+    // 1. 获取事件源(5种方式)
+    var btn1 = document.getElementsByClassName("my-btn")[0];
+    var btn2 = document.getElementsByTagName("button")[0];
+    var btn3 = document.getElementsByName("btn")[0];
+    var btn4 = document.getElementById("btn");
+    var btn5 = document.querySelector('#btn');
+    var btn6 = document.querySelector('.my-btn');   //这个会优先选前面的一个
+    var btn7 = document.querySelectorAll('.my-btn')[0];   //这个会优先选前面的一个
+
+    // 输出打印
+    console.log(btn1);
+    console.log(btn2);
+    console.log(btn3);
+    console.log(btn4);
+    console.log(btn5);
+    console.log(btn6);
+    console.log(btn7);
+
+
+
+</script>
+<script>
+    // 1. 获取事件源(
+
+/*
+*  var btn = document.getElementById("btn");
+    btn.onclick = deal;
+
+    function deal() {
+        alert('点我嘎哈!')
+    }
+* */
+
+
+</script>
+</body>
+</html>

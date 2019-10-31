@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MySQL数据类型 | MySQL 数据库管理系统</title>
+        
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="./2_files/style.css">
+    
+        
+        <link rel="stylesheet" href="./2_files/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="./2_files/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="./2_files/website(1).css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/3.html">
+    
+    
+    <link rel="prev" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/1.html">
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book without-animation with-summary font-size-2 font-family-1" data-level="1.2" data-chapter-title="MySQL数据类型" data-filepath="mysqlOne/2.md" data-basepath=".." data-revision="Thu Jul 05 2018 08:58:59 GMT+0800 (中国标准时间)" data-innerlanguage="">
+    
+
+<div class="book-summary"><div class="book-search" role="search"><input type="text" class="form-control" placeholder="Type to search"></div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="mysqlOne/index.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        MySQL基础
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="mysqlOne/1.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        MySQL基础操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="mysqlOne/2.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        MySQL数据类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="mysqlOne/3.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        MySQL建库建表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="mysqlOne/4.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        DML操作：增,删,改
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="mysqlOne/5.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        DQL操作：数据查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="mysqlOne/6.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        数据导入和导出
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mysqlTwo/index.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        MySQL高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="mysqlTwo/1.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        MySQL的多表联查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mysqlTwo/3.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        MySQL的事务处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="mysqlTwo/2.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        MySQL的视图及其它
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="mysqlTwo/4.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        MySQL的触发器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="mysqlTwo/5.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        MySQL存储过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="mysqlTwo/6.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        MySQL日志及数据恢复
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="mysqlTwo/8.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlTwo/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        慢查询及sql优化
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="pymysql/index.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/pymysql/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Python链接MySQL
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="pymysql/2.html">
+            
+                
+                    <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/pymysql/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        增,删,改,查
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-align-justify"></i></a><a class="btn pull-left js-toolbar-action" aria-label="Search" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-search"></i></a><div class="dropdown pull-right  js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-5 ">Facebook</button><button class="button size-5 ">Google+</button><button class="button size-5 ">Twitter</button><button class="button size-5 ">Weibo</button><button class="button size-5 ">Instapaper</button></div></div></div><a class="btn pull-right js-toolbar-action" aria-label="" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-facebook"></i></a><a class="btn pull-right js-toolbar-action" aria-label="" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-twitter"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/2.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/">MySQL 数据库管理系统</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mysql-数据类型">MySQL 数据类型</h1>
+<h3 id="数值类型">数值类型</h3>
+<blockquote>
+<p><strong>tinyint  </strong> 1字节      可以表示 0-255 (无符号)       可以表示 -128 ~ 127 (有符号)</p>
+<p><strong>int</strong>          4字节     无符号(0，4 294 967 295)      有符号 (-2 147 483 648，2 147 483 647)</p>
+<p>​<strong>decimal </strong> 以字符串形式存储的浮点数 decimal(5, 2) 表示数值总共5位, 小数占2位</p>
+</blockquote>
+<h3 id="日期和时间类型">日期和时间类型</h3>
+<blockquote>
+<p>datetime  8字节    1000-01-01 00:00:00 -- 9999-12-31 23:59:59</p>
+</blockquote>
+<h3 id="字符串类型">字符串类型</h3>
+<blockquote>
+<p><strong>char</strong> 定长字符串​  char(7) 不管实际插入多少字符, 它都会占用7个字符位置(中文一个汉字也是一个位置)</p>
+<p><strong>varchar</strong> 变长字符串 <strong>varchar(7)</strong> 如果实际插入4个字符, 那么它只占4个字符位置</p>
+<p><strong>text</strong> 这种类型用来存放超大文本</p>
+<p>​<strong>enum</strong> 枚举类型( 多选一 ) ​<strong>sex enum('w','m','x')</strong> 代表sex这个字段, 可以取 'w', 'm', 'x' 中的一个值</p>
+</blockquote>
+<h3 id="表的字段约束"><strong>表的字段约束</strong></h3>
+<blockquote>
+<p><strong>unsigned</strong> 无符号</p>
+<p>​<strong>int(4)</strong> 显示宽度</p>
+<p>​<strong>zerofill</strong> 零填充, 位数不够的时候用前导零填充</p>
+<p>​<strong>not null</strong> 不能为空    在操作数据库时如果输入该字段的数据为NULL ，就会报错</p>
+<p>​<strong>default</strong> 设置默认值</p>
+<p>​<strong>primary key</strong> 主键 不能为空 且唯一</p>
+<p>​<strong>auto_increment</strong> 定义列为自增的属性，一般用于主键，数值会自动加1。</p>
+<p>​<strong>unique</strong> 唯一</p>
+</blockquote>
+<h3 id="mysql的运算符：">MySQL的运算符：</h3>
+<blockquote>
+<p>算术运算符：+ - * / %</p>
+<p>比较运算符：= &gt; &lt; &gt;= &lt;= &lt;&gt; !=</p>
+<p>数据库特有的比较：in，not in, is null,is not null,like, between and</p>
+<p>逻辑运算符：and or not</p>
+<p>like: 支持特殊符号%和_ ; 其中 %表示任意数量的任意字符，_表示任意一位字符。</p>
+</blockquote>
+<h2 id="数值类型">数值类型</h2>
+<blockquote>
+<p>MySQL支持所有标准SQL数值数据类型。</p>
+<p>这些类型包括严格数值数据类型(INTEGER、SMALLINT、DECIMAL和NUMERIC)，以及近似数值数据类型(FLOAT、REAL和DOUBLE PRECISION)。</p>
+<p>关键字INT是INTEGER的同义词，关键字DEC是DECIMAL的同义词。</p>
+<p>BIT数据类型保存位字段值，并且支持MyISAM、MEMORY、InnoDB和BDB表。</p>
+<p>作为SQL标准的扩展，MySQL也支持整数类型TINYINT、MEDIUMINT和BIGINT。下面的表显示了需要的每个整数类型的存储和范围。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">大小</th>
+<th style="text-align:left">范围（有符号）</th>
+<th style="text-align:left">范围（无符号）</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">TINYINT</td>
+<td style="text-align:left">1 字节</td>
+<td style="text-align:left">(-128，127)</td>
+<td style="text-align:left">(0，255)</td>
+<td style="text-align:left">小整数值</td>
+</tr>
+<tr>
+<td style="text-align:left">SMALLINT</td>
+<td style="text-align:left">2 字节</td>
+<td style="text-align:left">(-32 768，32 767)</td>
+<td style="text-align:left">(0，65 535)</td>
+<td style="text-align:left">大整数值</td>
+</tr>
+<tr>
+<td style="text-align:left">MEDIUMINT</td>
+<td style="text-align:left">3 字节</td>
+<td style="text-align:left">(-8 388 608，8 388 607)</td>
+<td style="text-align:left">(0，16 777 215)</td>
+<td style="text-align:left">大整数值</td>
+</tr>
+<tr>
+<td style="text-align:left">INT或INTEGER</td>
+<td style="text-align:left">4 字节</td>
+<td style="text-align:left">(-2 147 483 648，2 147 483 647)</td>
+<td style="text-align:left">(0，4 294 967 295)</td>
+<td style="text-align:left">大整数值</td>
+</tr>
+<tr>
+<td style="text-align:left">BIGINT</td>
+<td style="text-align:left">8 字节</td>
+<td style="text-align:left">(-9 233 372 036 854 775 808，9 223 372 036 854 775 807)</td>
+<td style="text-align:left">(0，18 446 744 073 709 551 615)</td>
+<td style="text-align:left">极大整数值</td>
+</tr>
+<tr>
+<td style="text-align:left">FLOAT</td>
+<td style="text-align:left">4 字节</td>
+<td style="text-align:left">(-3.402 823 466 E+38，-1.175 494 351 E-38)，0，(1.175 494 351 E-38，3.402 823 466 351 E+38)</td>
+<td style="text-align:left">0，(1.175 494 351 E-38，3.402 823 466 E+38)</td>
+<td style="text-align:left">单精度 浮点数值</td>
+</tr>
+<tr>
+<td style="text-align:left">DOUBLE</td>
+<td style="text-align:left">8 字节</td>
+<td style="text-align:left">(-1.797 693 134 862 315 7 E+308，-2.225 073 858 507 201 4 E-308)，0，(2.225 073 858 507 201 4 E-308，1.797 693 134 862 315 7 E+308)</td>
+<td style="text-align:left">0，(2.225 073 858 507 201 4 E-308，1.797 693 134 862 315 7 E+308)</td>
+<td style="text-align:left">双精度 浮点数值</td>
+</tr>
+<tr>
+<td style="text-align:left">DECIMAL</td>
+<td style="text-align:left">对DECIMAL(M,D) ，如果M&gt;D，为M+2否则为D+2</td>
+<td style="text-align:left">依赖于M和D的值</td>
+<td style="text-align:left">依赖于M和D的值</td>
+<td style="text-align:left">小数值</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="日期和时间类型">日期和时间类型</h2>
+<blockquote>
+<p>表示时间值的日期和时间类型为DATETIME、DATE、TIMESTAMP、TIME和YEAR。</p>
+<p>每个时间类型有一个有效值范围和一个"零"值，当指定不合法的MySQL不能表示的值时使用"零"值。</p>
+<p>TIMESTAMP类型有专有的自动更新特性，将在后面描述。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">大小(字节)</th>
+<th style="text-align:left">范围</th>
+<th style="text-align:left">格式</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">DATE</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">1000-01-01/9999-12-31</td>
+<td style="text-align:left">YYYY-MM-DD</td>
+<td style="text-align:left">日期值</td>
+</tr>
+<tr>
+<td style="text-align:left">TIME</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">'-838:59:59'/'838:59:59'</td>
+<td style="text-align:left">HH:MM:SS</td>
+<td style="text-align:left">时间值或持续时间</td>
+</tr>
+<tr>
+<td style="text-align:left">YEAR</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1901/2155</td>
+<td style="text-align:left">YYYY</td>
+<td style="text-align:left">年份值</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>DATETIME</strong></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">1000-01-01 00:00:00/9999-12-31 23:59:59</td>
+<td style="text-align:left">YYYY-MM-DD HH:MM:SS</td>
+<td style="text-align:left">混合日期和时间值</td>
+</tr>
+<tr>
+<td style="text-align:left">TIMESTAMP</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">1970-01-01 00:00:00/2037 年某时</td>
+<td style="text-align:left">YYYYMMDD HHMMSS</td>
+<td style="text-align:left">混合日期和时间值，时间戳</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="字符串类型">字符串类型</h2>
+<blockquote>
+<p>字符串类型指CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET。该节描述了这些类型如何工作以及如何在查询中使用这些类型。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">大小</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CHAR</td>
+<td style="text-align:left">0-255字节</td>
+<td style="text-align:left">定长字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">VARCHAR</td>
+<td style="text-align:left">0-65535 字节</td>
+<td style="text-align:left">变长字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">TINYBLOB</td>
+<td style="text-align:left">0-255字节</td>
+<td style="text-align:left">不超过 255 个字符的二进制字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">TINYTEXT</td>
+<td style="text-align:left">0-255字节</td>
+<td style="text-align:left">短文本字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">BLOB</td>
+<td style="text-align:left">0-65 535字节</td>
+<td style="text-align:left">二进制形式的长文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">TEXT</td>
+<td style="text-align:left">0-65 535字节</td>
+<td style="text-align:left">长文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">MEDIUMBLOB</td>
+<td style="text-align:left">0-16 777 215字节</td>
+<td style="text-align:left">二进制形式的中等长度文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">MEDIUMTEXT</td>
+<td style="text-align:left">0-16 777 215字节</td>
+<td style="text-align:left">中等长度文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">LONGBLOB</td>
+<td style="text-align:left">0-4 294 967 295字节</td>
+<td style="text-align:left">二进制形式的极大文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">LONGTEXT</td>
+<td style="text-align:left">0-4 294 967 295字节</td>
+<td style="text-align:left">极大文本数据</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>CHAR和VARCHAR类型类似，但它们保存和检索的方式不同。它们的最大长度和是否尾部空格被保留等方面也不同。在存储或检索过程中不进行大小写转换。</p>
+<p>BINARY和VARBINARY类类似于CHAR和VARCHAR，不同的是它们包含二进制字符串而不要非二进制字符串。也就是说，它们包含字节字符串而不是字符字符串。这说明它们没有字符集，并且排序和比较基于列值字节的数值值。</p>
+<p>BLOB是一个二进制大对象，可以容纳可变数量的数据。有4种BLOB类型：TINYBLOB、BLOB、MEDIUMBLOB和LONGBLOB。它们只是可容纳值的最大长度不同。</p>
+<p>有4种TEXT类型：TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT。这些对应4种BLOB类型，有相同的最大长度和存储需求。</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/1.html" class="navigation navigation-prev " aria-label="Previous page: MySQL基础操作"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="file:///C:/Users/my/Desktop/_book/py14/%E6%95%B0%E6%8D%AE%E5%BA%93/py-MySql-18.7.5/mysqlOne/3.html" class="navigation navigation-next " aria-label="Next page: MySQL建库建表" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script async="" src="file://:35729/livereload.js"></script><script src="./2_files/app.js.下载"></script>
+
+    
+    <script src="./2_files/lunr.min.js.下载"></script>
+    
+
+    
+    <script src="./2_files/search.js.下载"></script>
+    
+
+    
+    <script src="./2_files/buttons.js.下载"></script>
+    
+
+    
+    <script src="./2_files/buttons.js(1).下载"></script>
+    
+
+    
+    <script src="./2_files/plugin.js.下载"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    
+    
+
+</body></html>

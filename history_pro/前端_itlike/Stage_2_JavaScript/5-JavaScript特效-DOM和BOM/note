@@ -1,0 +1,85 @@
+PC端中的特效(淘宝,京东)
+    轮播图
+    定时器
+    选项卡
+    之类的
+
+
+JavaScript的组成
+    ECMAScript-JavaScript的标准规范ES6
+    BOM-浏览器对象模型
+    DOM-文档对象模型
+
+BOM
+    简介
+        (Browser Object Document) 即浏览器对象模型
+        提供了独立于内容,而与浏览器窗口进行交互的对象
+        主要用于管理窗口与窗口之间的通讯,因此其核心对象是window
+        BOM由一系列相关的对象构成,并且每个对象都提供 了很多方法与属性
+    需要掌握什么
+        掌握与浏览器窗口交互的对象
+            可以移动\调整
+            可以用于导航location对象与history对象
+            可以获取浏览器\操作系统与用户屏幕信息的navigator与screen对象
+
+    *window对象
+        主要知识点
+            它是ECMAScript规定的全局global对象,又是JavaScript访问浏览器窗口的一个接口
+            系统对话框
+                这些对话框外观有操作系统\浏览器设定,css不起作用,所以很多时候可能需要自定义对话框
+                alert()
+                confirm()
+                prompt()
+            移动窗口,调整窗口大小
+            导航和打开窗口
+            时序相关的函数(原来是BOM的实现,而非ECMAJavaScript的实现)
+        目前掌握
+            所有全局的变量都是window的属性
+            所有全局的函数都是window的方法
+
+    *document对象
+        每个载入浏览器的HTML文档就是一个document对象
+        document对象是window对象的一部分,可以通过window.document属性对其进行访问.
+        常用的对象方法:
+            close()
+            open()
+            write()
+            writein()
+    location对象
+    navigator对象
+    history对象
+
+事件
+    JavaScript是以事件驱动为核心的一门语言
+    事件三要素
+        事件源,事件,事件驱动程序
+        获取事件源,绑定事件,书写事件驱动程序
+
+    事件绑定
+
+        匿名函数绑定
+
+DOM
+    简介:文档对象模型(Document Object Mode)
+    原理分析
+        HTML加载完毕,渲染引擎会在内存中把HTML文档,生成一个DOM树,getElementById是获取内中的DOM上的元素节点
+        然后操作的时候修改的是该元素的属性
+    文档对象模型
+        document是文档对象模型的一部分
+        DOM是一个复合的数据类型
+
+    DOM访问关系
+        节点的获得
+        父节点
+        兄弟节点
+            单词普及
+                sibling
+                next
+                previous
+            下一个兄弟节点
+            上一个兄弟节点
+
+        单个节点
+        补充
+
+

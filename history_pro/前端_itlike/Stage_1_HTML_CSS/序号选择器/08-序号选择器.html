@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>序号选择器</title>
+    <style>
+        /*不区分类型*/
+        li:nth-last-child(4){
+            color: red;
+        }
+        li:first-child{
+            color: palegreen;
+        }
+        li:last-child{
+            color: darkorchid;
+        }
+        li:nth-child(7){
+            color: #ff6a1f;
+        }
+
+        /*区分类型*/
+        li:first-of-type{
+            background-color: #3b8c94;
+        }
+
+        li:nth-child(odd){
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <a href="#">撩课</a>
+    <li>zhihuasodjgkl</li>
+    <li>zhihusdfasodjgkl</li>
+    <li>zhihusdsdasodjgkl</li>
+    <li>zhihuasdfasodjgkl</li>
+    <span>itike</span>
+    <li>zhihasguasodjgkl</li>
+    <li>zhihuasdfasodjgkl</li>
+    <li>zhihbcuasodjgkl</li>
+    <li>gasgweghggwwg</li>
+</ul>
+</body>
+</html>

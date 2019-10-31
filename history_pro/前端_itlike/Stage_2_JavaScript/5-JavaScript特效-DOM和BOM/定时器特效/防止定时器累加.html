@@ -1,0 +1,49 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+
+<script>
+    window.onload = function () {
+        //1获取需要的标签
+        var box = document.getElementById("box");
+        var height = 0, timer = null;
+        // 2监听鼠标进入
+        // 先清除定时器,后设置定时器
+        box.onmouseover = function () {
+            // 清除定时器
+            clearInterval(timer);
+
+            // 设置定时器
+            timer = setInterval(function () {
+                //
+                height ++;
+                console.log(height);
+            }, 1000);
+        }
+
+
+    }
+</script>
+</body>
+</html>

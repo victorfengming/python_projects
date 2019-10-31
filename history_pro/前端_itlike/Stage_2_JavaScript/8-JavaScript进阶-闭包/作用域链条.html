@@ -1,0 +1,89 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域链条</title>
+    <style>
+        /*
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+        */
+    </style>
+    <!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+</head>
+<body>
+
+
+<script>
+    var num = 3;
+    (function () {
+        (function () {
+            (function () {
+                (function () {
+                    (function () {
+                        var num = 2;
+                        // age.log(age);
+                        // 访问不了
+                        (function () {
+                            age = 18;
+                            console.log(num);
+                            // 虽然也能查找到,但是性能会下降
+                            // 所以用的时候在定义才是最好的
+                        })()
+                    })()
+                })()
+            })()
+        })()
+    })()
+
+
+    /*window.onload = function () {
+        
+        
+    };
+    */
+    /*
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+    */
+
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

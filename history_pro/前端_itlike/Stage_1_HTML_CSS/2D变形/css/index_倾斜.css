@@ -1,0 +1,9 @@
+img{
+    transition: all 1s linear;
+}
+
+img:hover{
+    /*transform: skewX(60deg);*/
+    /*transform: skewY(60deg);*/
+    transform: skew(60deg,-30deg);
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# coding by xiaoming
+
+
+1. 简单
+2. 易学
+3. 开发速度快
+4. 免费 开源
+5. 高级语言
+6. 跨平台性
+    unix Linux Windows
+7. 可扩展性
+    各种包,库,框架
+8. 胶水语言
+    可以和各大语言融合Cpython\Jpython
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

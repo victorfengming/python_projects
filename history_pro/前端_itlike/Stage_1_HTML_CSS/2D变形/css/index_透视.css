@@ -1,0 +1,18 @@
+/*透视就像上帝视角一样*/
+
+body{
+    perspective: 300px;
+}
+
+
+img{
+    margin: 100px;
+    transition: all 5s linear;
+}
+
+
+img:active{
+    /*transform: rotateX(300deg);*/
+    /*transform: rotateY(300deg);*/
+    transform: rotate3d(100,110,200,360deg);
+}

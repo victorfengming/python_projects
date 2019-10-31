@@ -1,0 +1,107 @@
+
+
+<!--created by xiaoming-->
+
+
+<!--    缓动动画,缓动动画不是匀速的-->
+<!--在数学和物理中是有缓动公式的-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 90px;
+            height: 90px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">开始动画</button>
+    <div id="box"></div>
+
+<script>
+    window.onload = function () {
+        // 定义变量
+        // 定时器
+        var timer = null, begin = 0, target = 800;
+
+
+        // 开始动画
+        $('btn').onclick = function () {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                // 求出不长
+                // 起始值 += (结束值 - 起始值) * 缓动洗漱
+                begin += (target - begin) * 0.2;
+                // console.log(begin);
+                // 这个精度比较高799.9999999999997
+                // 当他到达target时候,就清掉
+                // 判断
+                if(Math.round(begin) >= target){
+                    begin = target;
+                    clearInterval(timer);
+                }
+
+                // 动起来
+                $('box').style.marginLeft = begin + 'px';
+
+            }, 100)
+        }
+    };
+
+    // function linearAnimation(btnId, boxId, step, target) {
+    //         //1.获取徐亚欧的标签
+    //         var btn = document.getElementById(btnId);
+    //         var box = document.getElementById(boxId);
+    //
+    //         // 2定义变量
+    //
+    //         var timer = null, begin = 0;
+    //
+    //         // 3.监听按钮的点击
+    //
+    //         btn.onclick = function () {
+    //             //
+    //             // 3.1 清除定好私企
+    //             clearInterval(timer);
+    //             // 3.2设置定时器
+    //             timer = setInterval(function () {
+    //                 //相应的控制
+    //                 // 相加
+    //                 begin += step;
+    //                 // console.log(begin);
+    //
+    //                 // 终止条>件控制
+    //                 if(begin > target){
+    //                     //清除定时器
+    //                     begin = target;
+    //                     clearInterval(timer);
+    //                 }
+    //                 console.log(begin);
+    //                 //动起来
+    //                 box.style.marginLeft = begin + 'px';
+    //
+    //             }, 100)
+    //
+    //
+    //         };
+    //     }
+
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id) : null;
+
+    }
+</script>
+</body>
+</html>

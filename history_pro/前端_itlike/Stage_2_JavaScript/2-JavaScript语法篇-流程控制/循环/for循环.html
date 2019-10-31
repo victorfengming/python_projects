@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            border: 3px solid skyblue;
+            padding: 10px;
+            display: inline-block;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/html">
+    // 打印好友列表
+    for(var i = 1; i <= 2; i++){
+        console.log('好友列表'+i);
+        for (var j = 1; j <= 13; j++){
+            console.log('好友'+j);
+        }
+    }
+</script>
+<script type="text/html">
+    // for 循环嵌套实现矩形绘制
+    // 需求：
+    //     在界面上绘制图形
+    for(var hang = 1; hang <= 13; hang++){
+        for(var lie = 1; lie <= 24; lie++){
+            // console.log('*');
+            // 不在控制台输出了，来输出到界面上
+            window.document.write('*');
+        }
+        window.document.write('<br>');
+    }
+</script>
+<script>
+    // 打印99乘法表
+    var hang = 1, lie = 1;
+    for(;hang < 10;hang++){
+        lie = 1;
+        for(;lie <= hang;lie++){
+            window.document.write('<span>'+lie+'*'+hang+'='+lie*hang+'&emsp;'+'</span>');
+        }
+        window.document.write('<br>');
+    }
+</script>
+</body>
+</html>

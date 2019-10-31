@@ -1,0 +1,99 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取选中的内容dmeo1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 100px;
+            width: 300px;
+        }
+
+        #share_text {
+            background-color: plum;
+            width: 150px;
+            color: orange;
+            position: absolute;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<p id="word">
+    沈阳理工大学团委
+    今天 11:22 来自 iPhone客户端
+    #小团儿微分享# 团儿总全景NBA数据分析#NBA每日最佳球员#
+    【哈登50+11+10集锦】在今天火箭主场击败国王的比赛中，哈登再次打出精彩表现砍下50分三双！此役哈登全场贡献50分11篮板10助攻，率队捍卫主场迎来两连胜！这是哈登职业生涯第5个50分三双和第18次获得50分的比赛，同时也是他本赛季第9次收获50分的比赛，还是他本赛季第7次砍下三双数据，一起来欣赏哈登的精彩表现[加油]
+    LNBA的微博视频 2沈阳·沈阳理工大学收起全文d
+</p>
+<div id="share_text">使用分享</div>
+<script>
+    window.onload = function () {
+        // 1.监听鼠标抬起
+        $("word").onmouseup = function () {
+            // 1.0兼容文
+            var e = event || window.event;
+
+            //1.1 获取选中文字
+
+            var selectedText;
+            if (window.getSelection) { // 标准模式 获取选中的文字
+                selectedText = window.getSelection().toString();
+            } else { // IE 系列
+                selectedText = document.selection.createRange().text;
+            }
+
+            // console.log(selectedText);
+
+            // 整体判断
+            if (selectedText !== null) {
+                // 1.2 显示面板
+                $("share_text").innerText = selectedText;
+                $("share_text").style.display = "block";
+                // 拿到鼠标的松手位置
+                // 1.3改变位置
+                $("share_text").style.left = e.clientX + "px";
+                $("share_text").style.top = e.clientY + "px";
+
+                // 取消选中
+                // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+                // return false;
+
+            }
+
+        };
+
+        // 2监听文档的点击
+        document.onmousedown = function (event) {
+            // 2.0兼容
+            var e = event || window.event;
+
+            // 2.1获取点击区域的ID
+            var targetId = e.target ? e.target.id : e.srcElement.id;
+
+            // 2.2panduan pandu判断
+            if (targetId !== "share_text") {
+                $("share_text").style.display = "none";
+            }
+            // 取消选中
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        }
+
+    };
+
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+
+</script>
+</body>
+</html>
+

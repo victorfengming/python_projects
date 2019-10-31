@@ -1,0 +1,189 @@
+/*简书的样式比较多*/
+/*这里要写全注释*/
+
+/*------------------通用样式start------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+input{
+    outline: none;
+        /*去掉外边框*/
+}
+
+/*------------------通用样式end------------------*/
+
+
+/*------------------头部样式start------------------*/
+#nav{
+    height: 56px;
+    width: 100%;
+    /*background-color: bisque;*/
+    border-bottom: 1px solid #e7e7e7;
+    z-index: 999;
+    /*自己的约定,999代表最高层*/
+    /*其他的不能比他多*/
+
+    /*固定定位*/
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#nav .nav-content{
+    width: 1440px;
+    height: 56px;
+    /*background-color: crimson;*/
+
+    /*版心*/
+    margin: 0 auto;
+}
+
+#nav .nav-content .nav-content-l{
+    float: left;
+
+}
+
+#nav .nav-content .nav-content-l a img{
+    width: 110px;
+    height: 56px;
+
+}
+
+#nav .nav-content .nav-content-c{
+    width: 700px;
+    height: 56px;
+    /*background-color: red;*/
+    /*浮动*/
+    float: left;
+
+    margin-left: 120px;
+
+}
+
+#nav .nav-content .nav-content-c ul li{
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    /*放到下面了*/
+    /*padding: 0 15px;*/
+}
+
+
+#nav .nav-content .nav-content-c ul li a{
+    /*background-color: red;*/
+    /*改变标签的类型*/
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#nav .nav-content .nav-content-c ul li img{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+
+
+#nav .nav-content .nav-content-c ul li a:hover{
+    /*设置鼠标进来的时候的背景*/
+    background-color: #ccc;
+}
+
+
+#nav .nav-content .nav-content-c ul li input{
+    width: 225px;
+    height: 38px;
+    background-color: #eeeeee;
+    border-radius: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #b8b8b8;
+    /*outline: none;*/
+}
+
+
+#nav .nav-content .nav-content-c ul li .search-input{
+    position: relative;
+    margin-left: 10px;
+}
+
+
+#nav .nav-content .nav-content-c ul li .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 14px;
+
+}
+
+/*右边*/
+#nav .nav-content .nav-content-r{
+    width: 300px;
+    height: 56px;
+    line-height: 56px;
+    /*background-color: red;*/
+    float: right;
+
+}
+
+#nav .nav-content .nav-content-r .jsa-btn{
+    margin-left: 10px;
+}
+
+
+/*右边*/
+#nav .nav-content .nav-content-r .head-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+
+}
+
+#nav .nav-content .nav-content-r .write-btn{
+    background-color: rebeccapurple;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #fff;
+
+}
+
+#nav .nav-content .nav-content-r .write-btn .write-btn img{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+/*!*我看着那张图片太大,难受,先设置让他小一点儿*!*/
+/*#nav .nav-content-r .head-btn{*/
+    /*width: 30px;*/
+/*}*/
+/*------------------头部样式end------------------*/
+
+
+
+

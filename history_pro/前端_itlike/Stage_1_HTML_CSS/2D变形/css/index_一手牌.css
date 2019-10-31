@@ -1,0 +1,54 @@
+/*扑克牌需要进行切割*/
+/*这个案例还能复习之前的雪碧图*/
+
+
+section{
+    width: 120px;
+    height: 163px;
+    margin: 200px auto;
+    /*background-color: #b92c28;*/
+    position: relative;
+}
+
+
+section div{
+    width: 100%;
+    height: 100%;
+    background:#fff url("../images/pk.png") no-repeat -17px -17px;
+    /*设置position*/
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform-origin: left bottom;
+    transition: all 1s linear;
+
+}
+
+section:hover div:nth-child(1){
+    transform: rotate(15deg);
+}
+
+section:hover div:nth-child(2){
+    transform: rotate(30deg);
+}
+
+section:hover div:nth-child(3){
+    transform: rotate(45deg);
+}
+
+section:hover div:nth-child(4){
+    transform: rotate(60deg);
+}
+
+
+section:hover div:nth-child(5){
+    transform: rotate(75deg);
+}
+
+
+section:hover div:nth-child(6){
+    transform: rotate(90deg);
+}
+
+

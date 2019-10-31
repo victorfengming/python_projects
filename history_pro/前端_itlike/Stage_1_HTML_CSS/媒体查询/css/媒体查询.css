@@ -1,0 +1,60 @@
+/*媒体查询*/
+@media screen and (max-width: 500px) {
+    body{
+        background-color: red;
+        color: #b3d7ff;
+    }
+
+    #box{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    body{
+        background-color: skyblue;
+        color: purple;
+    }
+
+    #box{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    body{
+        background-color: darkkhaki;
+        color: lawngreen;
+    }
+
+    #box{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    body{
+        background-color: darkolivegreen;
+        color: hotpink;
+    }
+
+    #box{
+        font-size: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        #box{
+            border: 10px solid #000;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+
+<!--1.1 clientWidth和clientHeight-->
+
+<!--    网页可见区域宽： document.body.clientWidth;-->
+
+<!--    网页可见区域高： document.body.clientHeight;-->
+
+
+<script>
+    window.onload = function () {
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+</body>
+</html>
+

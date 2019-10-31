@@ -1,0 +1,163 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("images/1.jpg");
+            /*margin-bottom: 200px;*/
+        }
+
+
+
+        /************************搜索-start**********************/
+        #content {
+            width: 641px;
+            height: 189px;
+            margin: 20px auto;
+            /*background-color: green;*/
+        }
+
+        #content .logo {
+            /*background-color: red;*/
+            text-align: center;
+            width: 641px;
+            height: 112px;
+        }
+
+        #content .logo img {
+            width: 400px;
+        }
+
+        #content .search {
+            width: 100%;
+            height: 77px;
+            /*background-color: skyblue;*/
+            padding-top: 10px;
+        }
+
+        #content .search form {
+            width: 100%;
+            height: 44px;
+            /*background-color: purple;*/
+        }
+
+        #content .search form .search-input {
+            width: 536px;
+            height: 44px;
+            padding-left: 8px;
+
+            /*去除外边框*/
+            outline: none;
+
+            border: 1px solid #e0e0e0;
+
+            float: left;
+        }
+
+        #content .search form .search-input:focus {
+            border-color: #398bfb;
+        }
+
+        #content .search-submit {
+            width: 105px;
+            height: 44px;
+            background-color: #398bfb;
+            border: none;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+
+            /*去除外边框*/
+            outline: none;
+        }
+
+        /************************搜索-end**********************/
+
+        #short_cut{
+            /*background-color: red;*/
+            width: 80%;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            /*border: 3px solid #398bfb;*/
+            border-radius: 5px;
+        }
+        
+        #short_cut div{
+            float: left;
+            width: 130px;
+            height: 130px;
+            /*background-color: greenyellow;*/
+            margin-top: 10px;
+            margin-left: 20px;
+
+        }
+
+        #short_cut div a{
+            text-decoration: none;
+            text-align: center;
+            line-height: 0;
+        }
+        #short_cut div a img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<section id="content">
+    <!--logo-->
+    <div class="logo">
+        <img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/yun_logo.png" alt="云logo">
+    </div>
+    <div class="search">
+        <form action=gogogo id="biaodan">
+            <input name="content" type="text" class="search-input">
+            <input name="btn" type="submit" class="search-submit" value="我要导航">
+        </form>
+    </div>
+    <!--搜索-->
+</section>
+<div id="short_cut">
+    <div><a href="https://mail.163.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/neteasyemail.png" alt="" title="网易邮箱"></a></div>
+    <div><a href="https://www.so.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/360logo.png" alt="" title="360搜索"></a></div>
+    <div><a href="https://baike.baidu.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/baidu_logo.png" alt="" title="百度百科"></a></div>
+    <div><a href="https://study.163.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/wangyiketang_logo.png" alt="" title="网易云课堂"></a></div>
+    <div><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/wikI_logo.png" alt="" title="维基百科"></a></div>
+    <div><a href="http://tool.uixsj.cn/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/xsj_logo.png" alt="" title="现实君工具"></a></div>
+    <div><a href="https://www.jd.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/jdlogo.png" alt="" title="京东购物"></a></div>
+    <div><a href="http://www.runoob.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/cnlogo.png" alt="" title="菜鸟教程"></a></div>
+    <div><a href="https://translate.google.cn/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/google_translation_logo.png" alt="" title="谷歌翻译"></a></div>
+    <div><a href="https://cn.bing.com/" target="_blank"><img src="http://tu1.027cgb.com/619017/%E7%B4%A0%E6%9D%90%E5%9B%BE%E7%89%87/bing_logo.png" alt="" title="必应搜索"></a></div>
+</div>
+<script>
+    window.onload = function () {
+        biaodan = $("biaodan");
+
+    };
+
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id) : null;
+    }
+
+    function gogogo() {
+        window.location.href = "www.baidu.com";
+        console.log('哈哈');
+    }
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+/*局:
+    1.Flex布局
+        display:inline-flex;将对象作为弹性伸缩盒子战术,用于行内元素
+        display:flex;将对象作为弹性伸缩盒子展示,用于块级元素
+    2.常用属性
+        flex-direction
+            用于指定Flex主轴的方向,继而决定Flex子项在Flex容器中的位置
+            取值:row|row-reverse|column|column-reverse
+                row:默认值,表示水平方向从左到右排列,此时水平方向轴线为主轴
+                row-reverse:与row相反
+                column:表示垂直方向从上到下排列,此时垂直方向轴线为主轴
+                column-reverse:与column相反
+                ``
+
+        justify-content
+        align-items
+        flex-wrap
+        align-content
+        align-self
+    3.复合属性flex
+        复合属性flex,是flex-shrink和flex-basis 的简写属性,用来指定flex子项如何分配空间
+        flex-grow:默认值为0,若省略则默认为1
+        flex-shrink:默认值为1,省略时默认为1
+        flex-basis:默认值为auto,省略时默认为0%
+    4.案例实操

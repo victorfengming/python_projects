@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        #box{
+            width: 250px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: orange;
+
+        }
+
+        #box_top{
+            font-size: 23px;
+            color: aliceblue;
+            margin-bottom: 40px;
+            /*margin-top: 10px;*/
+        }
+
+        #box_bottom{
+            height: 70%;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box_top">
+            2019年3月27日
+        </div>
+        <div id="box_bottom">
+            12
+        </div>
+    </div>
+
+<script>
+    // 日历特效
+    window.onload = function () {
+        // 创建日期对象
+        var date = new Date();
+
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        var week = date.getDay();
+
+        var weeks = ['星期日','星期一','星期儿','星期伞','星期斯','星期乌','星期溜'];
+        // console.log(weeks);
+        // console.log(y);
+        $('box_top').innerText = y + '年' + m + '月' + d + '日' + weeks[week];
+        $('box_bottom').innerText = d;
+    };
+
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id) : null;
+    }
+</script>
+</body>
+</html>

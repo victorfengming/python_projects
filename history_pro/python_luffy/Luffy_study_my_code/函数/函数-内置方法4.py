@@ -1,0 +1,4 @@
+locals()
+globals()
+frozenset()
+zip()

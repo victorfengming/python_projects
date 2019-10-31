@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!--<img src="" alt="">-->
+        <p id="word">哈哈哈</p>
+        <button>点我</button>
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            // CRUD(增删盖茶)
+
+            var box = document.getElementById("box");
+
+            // 1.创建节点
+            // 我想插入一张图片
+            var img = document.createElement("img");
+            // 就相当于在HTML的body中加了一个<img>标签,但是这个标签没有属性
+            // 下面为标签添加属性
+            img.src = "img/img_01.jpg";
+            // 现在还没放到里面去
+            // 要先拿到盒子
+            // box.appendChild(img);
+            // append是追加在结尾的
+            // insert是可以插在任意的位置的
+            var btn = document.getElementsByTagName("button")[0];
+            box.insertBefore(img, btn);
+            /*
+            // 2.删除节点
+            // 要删除,得先拿到他
+            var word = document.getElementById("word");
+            word.parentNode.removeChild(word);  //自杀
+            */
+
+            var img = document.getElementsByTagName("img")[0];
+            // 获取
+            // console.log(img.getAttribute("src"));
+            // 设置
+            img.setAttribute("asd","知乎");
+            img.setAttribute("alt","没了");
+
+            // 删除节点属性
+            img.removeAttribute("alt")
+        }
+    </script>
+
+</body>
+</html>

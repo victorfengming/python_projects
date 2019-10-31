@@ -1,0 +1,838 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Redis缓存应用 | Web开发介绍 {#web开发介绍}</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../modular/13.html" />
+    
+    
+    <link rel="prev" href="../modular/10.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.12"
+        data-chapter-title="Redis缓存应用"
+        data-filepath="modular/12.md"
+        data-basepath=".."
+        data-revision="Tue Jun 12 2018 15:21:14 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="pip/index.html">
+            
+                
+                    <a href="../pip/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Virtualenv
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Web开发介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="django/index.html">
+            
+                
+                    <a href="../django/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Django简介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="django/1.html">
+            
+                
+                    <a href="../django/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Django入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="django/2.html">
+            
+                
+                    <a href="../django/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        创建应用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="url/index.html">
+            
+                
+                    <a href="../url/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        URLconf路由
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="model/index.html">
+            
+                
+                    <a href="../model/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Model模型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="model/1.html">
+            
+                
+                    <a href="../model/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        定义模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="model/2.html">
+            
+                
+                    <a href="../model/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        模型实例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="model/3.html">
+            
+                
+                    <a href="../model/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        模型查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="model/mo-xing-guan-xi.html">
+            
+                
+                    <a href="../model/mo-xing-guan-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        模型关系
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="view/index.html">
+            
+                
+                    <a href="../view/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        View视图
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="view/1.html">
+            
+                
+                    <a href="../view/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        HttpRequest
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="view/2.html">
+            
+                
+                    <a href="../view/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                        QueryDict
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="view/3.html">
+            
+                
+                    <a href="../view/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        HttpResponse
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="template/index.html">
+            
+                
+                    <a href="../template/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Template模板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="template/1.html">
+            
+                
+                    <a href="../template/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        模板语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="template/2.html">
+            
+                
+                    <a href="../template/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        模板继承
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="modular/index.html">
+            
+                
+                    <a href="../modular/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        常用web模块
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="modular/1.html">
+            
+                
+                    <a href="../modular/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        静态文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="modular/2.html">
+            
+                
+                    <a href="../modular/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Csrf
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="modular/3.html">
+            
+                
+                    <a href="../modular/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="modular/5.html">
+            
+                
+                    <a href="../modular/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        状态保持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="modular/6.html">
+            
+                
+                    <a href="../modular/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        验证码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="modular/11.html">
+            
+                
+                    <a href="../modular/11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        中间件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="modular/7.html">
+            
+                
+                    <a href="../modular/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        文件上传
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="modular/8.html">
+            
+                
+                    <a href="../modular/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        密码管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="modular/4.html">
+            
+                
+                    <a href="../modular/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        分页及优化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="modular/9.html">
+            
+                
+                    <a href="../modular/9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        富文本编辑器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="modular/10.html">
+            
+                
+                    <a href="../modular/10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        Django部署Apache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.12" data-path="modular/12.html">
+            
+                
+                    <a href="../modular/12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        Redis缓存应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="modular/13.html">
+            
+                
+                    <a href="../modular/13.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Auth认证
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="git/index.html">
+            
+                
+                    <a href="../git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Git版本控制器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="git/1.html">
+            
+                
+                    <a href="../git/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Git远程仓库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="git/2.html">
+            
+                
+                    <a href="../git/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Git 基本操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="project/index.html">
+            
+                
+                    <a href="../project/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        项目实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="project/1.html">
+            
+                
+                    <a href="../project/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        项目设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="project/2.html">
+            
+                
+                    <a href="../project/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        项目审核标准
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Web开发介绍 {#web开发介绍}</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="django&#x4F7F;&#x7528;redis&#x5B9E;&#x73B0;&#x7F13;&#x5B58;">Django&#x4F7F;&#x7528;redis&#x5B9E;&#x73B0;&#x7F13;&#x5B58;</h1>
+<h3 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x5B89;&#x88C5;">&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x5B89;&#x88C5;</h3>
+<ul>
+<li>1,&#x5B89;&#x88C5;redis&#x670D;&#x52A1;<pre><code>sudo apt-get install redis
+</code></pre></li>
+<li>2,&#x5B89;&#x88C5;django&#x7EC4;&#x4EF6;<pre><code>sudo pip3 install django-redis
+</code></pre></li>
+</ul>
+<h3 id="django&#x9879;&#x76EE;&#x914D;&#x7F6E;">Django&#x9879;&#x76EE;&#x914D;&#x7F6E;</h3>
+<pre><code class="lang-py">settings.py
+    CACHES = {
+        <span class="hljs-string">&quot;default&quot;</span>: {
+            <span class="hljs-comment"># &#x5F15;&#x64CE;</span>
+            <span class="hljs-string">&quot;BACKEND&quot;</span>: <span class="hljs-string">&quot;django_redis.cache.RedisCache&quot;</span>,
+            <span class="hljs-comment"># &#x7F13;&#x5B58;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF08;&#x9ED8;&#x8BA4;300&#xFF0C;None&#x8868;&#x793A;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;&#xFF0C;0&#x8868;&#x793A;&#x7ACB;&#x5373;&#x8FC7;&#x671F;&#xFF09;</span>
+            <span class="hljs-string">&apos;TIMEOUT&apos;</span>: <span class="hljs-number">300</span>,                                               
+            <span class="hljs-string">&quot;LOCATION&quot;</span>: <span class="hljs-string">&quot;redis://127.0.0.1:6379/1&quot;</span>,
+            <span class="hljs-string">&quot;OPTIONS&quot;</span>: {
+                <span class="hljs-string">&quot;CLIENT_CLASS&quot;</span>: <span class="hljs-string">&quot;django_redis.client.DefaultClient&quot;</span>,
+                <span class="hljs-comment"># &quot;PASSWORD&quot;: &quot;mysecret&quot;</span>
+            }
+        }
+    }
+</code></pre>
+<h3 id="&#x89C6;&#x56FE;&#x7F13;&#x5B58;&#xFF1A;">&#x89C6;&#x56FE;&#x7F13;&#x5B58;&#xFF1A;</h3>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x6846;&#x67B6;&#x7684;&#x66F4;&#x7EC6;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x7F13;&#x5B58;&#x5355;&#x4E2A;&#x89C6;&#x56FE;&#x7684;&#x8F93;&#x51FA;&#x3002;<code>django.views.decorators.cache</code></p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>cache_page</code>&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x5B83;&#x4F1A;&#x81EA;&#x52A8;&#x7F13;&#x5B58;&#x89C6;&#x56FE;&#x7684;&#x54CD;&#x5E94;</p>
+</blockquote>
+<pre><code class="lang-py">views.py
+<span class="hljs-comment"># &#x5728;&#x9700;&#x8981;&#x7F13;&#x5B58;&#x7684;&#x89C6;&#x56FE;&#x4E0A;&#x6DFB;&#x52A0;&#x88C5;&#x9970;&#x5668;, &#x53C2;&#x6570;&#x662F;&#x8BBE;&#x7F6E;timeout &#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C; &#x5355;&#x4F4D;&#x662F;&#x79D2;&#xFF0C; </span>
+
+<span class="hljs-keyword">from</span> django.views.decorators.cache <span class="hljs-keyword">import</span> cache_page
+
+<span class="hljs-decorator">@cache_page(10)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">(request)</span>:</span>
+
+    t =  datetime.datetime.now()
+
+    <span class="hljs-keyword">return</span> HttpResponse(t)
+</code></pre>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;-">&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58; :</h3>
+<blockquote>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x7684;&#x7AD9;&#x70B9;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x53D6;&#x51B3;&#x4E8E;&#x51E0;&#x4E2A;&#x6602;&#x8D35;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5176;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x7684;&#x7AD9;&#x70B9;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x53D6;&#x51B3;&#x4E8E;&#x51E0;&#x4E2A;&#x6602;&#x8D35;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x6BCF;&#x4E2A;&#x7AD9;&#x70B9;&#x6216;&#x6BCF;&#x4E2A;&#x89C6;&#x56FE;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x63D0;&#x4F9B;&#x7684;&#x5168;&#x9875;&#x7F13;&#x5B58;&#x662F;&#x4E0D;&#x7406;&#x60F3;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x60A8;&#x4E0D;&#x5E0C;&#x671B;&#x7F13;&#x5B58;&#x6574;&#x4E2A;&#x7ED3;&#x679C;&#xFF08;&#x56E0;&#x4E3A;&#x6709;&#x4E9B;&#x6570;&#x636E;&#x7ECF;&#x5E38;&#x66F4;&#x6539;&#xFF09;&#xFF0C;&#x4F46;&#x60A8;&#x4ECD;&#x7136;&#x5E0C;&#x671B;&#x7F13;&#x5B58;&#x5F88;&#x5C11;&#x66F4;&#x6539;&#x7684;&#x7ED3;&#x679C;</p>
+<p>&#x5728;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Django&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x4F4E;&#x5C42;&#x6B21;&#x7684;&#x7F13;&#x5B58;API&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#x4EFB;&#x4F55;Python&#x5BF9;&#x8C61;&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5B57;&#x5178;&#x3001;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#x7B49;&#x7B49;</p>
+<p>&#x57FA;&#x672C;&#x8BED;&#x6CD5;: set(key, value, timeout)  get(key)</p>
+</blockquote>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> django.core.cache <span class="hljs-keyword">import</span> cache
+
+cache.set(<span class="hljs-string">&apos;my_key&apos;</span>, <span class="hljs-string">&apos;hello, world!&apos;</span>, <span class="hljs-number">30</span>)
+cache.get(<span class="hljs-string">&apos;my_key&apos;</span>)
+</code></pre>
+<h3 id="&#x6A21;&#x677F;&#x7F13;&#x5B58;">&#x6A21;&#x677F;&#x7F13;&#x5B58;</h3>
+<blockquote>
+<p>&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>cache</code>&#x6A21;&#x677F;&#x6807;&#x7B7E;&#x6765;&#x7F13;&#x5B58;&#x6A21;&#x677F;&#x7247;&#x6BB5;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8BA9;&#x60A8;&#x7684;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6B64;&#x6807;&#x8BB0;&#xFF0C;&#x8BF7;&#x653E;&#x5728;&#x6A21;&#x677F;&#x7684;&#x9876;&#x90E8;&#x9644;&#x8FD1;&#x3002;<code>{ % load cache % }</code>&#x3002;</p>
+<p><a href="https://docs.djangoproject.com/en/1.11/topics/cache/#template-fragment-caching" target="_blank">&#x6587;&#x6863;&#x5730;&#x5740;</a>: <a href="https://docs.djangoproject.com/en/1.11/topics/cache/#template-fragment-caching" target="_blank">https://docs.djangoproject.com/en/1.11/topics/cache/#template-fragment-caching</a></p>
+</blockquote>
+<h3 id="&#x7AD9;&#x70B9;&#x7F13;&#x5B58;">&#x7AD9;&#x70B9;&#x7F13;&#x5B58;:</h3>
+<blockquote>
+<p>&#x7F13;&#x5B58;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#x662F;&#x7F13;&#x5B58;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;</p>
+<p><a href="https://docs.djangoproject.com/en/1.11/topics/cache/#the-per-site-cache" target="_blank">&#x6587;&#x6863;&#x5730;&#x5740;</a>:  <a href="https://docs.djangoproject.com/en/1.11/topics/cache/#the-per-site-cache" target="_blank">https://docs.djangoproject.com/en/1.11/topics/cache/#the-per-site-cache</a></p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../modular/10.html" class="navigation navigation-prev " aria-label="Previous page: Django部署Apache"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../modular/13.html" class="navigation navigation-next " aria-label="Next page: Auth认证"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

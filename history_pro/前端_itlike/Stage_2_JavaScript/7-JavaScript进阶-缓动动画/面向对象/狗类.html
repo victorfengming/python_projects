@@ -1,0 +1,89 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+    </style>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+<script>
+    function Dog(option) {
+        this._init(option);
+    }
+
+    //原型库
+    Dog.prototype = {
+        // 初始化方法
+        _init: function (option) {
+            var option = option || {};
+            this.name = option.name;
+            this.age = option.age;
+            this.dogFriends = option.dogFriends;
+
+        },
+        // 方法
+        eat: function (someThing) {
+            console.log(this.name + "吃" + someThing);
+        },
+        run: function (someWhere) {
+            console.log(this.name + "跑 " + someWhere);
+        }
+    };
+
+    // 实例化
+    var sDog = new Dog({name: "xioahua", age: 19});
+    // console.log(sDog);
+    // console.log(typeof sDog);
+    // console.log(sDog.age);
+    // console.log(sDog.dogFriends);
+    sDog.eat("奶");
+    sDog.run("操场");
+
+    var bDog = new Dog({name: "大黄", age: 10, dogFriends: "zhu"});
+    console.log(bDog);
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

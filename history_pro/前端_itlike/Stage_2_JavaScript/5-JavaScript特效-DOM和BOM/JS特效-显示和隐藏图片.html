@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">隐藏</button>
+    <p></p>
+    <img src="img/img_01.jpg" alt="">
+    <!--<div id="box">-->
+        <!--<p>哈哈哈</p>-->
+        <!--<p>呵呵呵</p>-->
+        <!--<img src="img/img2.jpg" alt="">-->
+    <!--</div>-->
+
+    <script>
+        window.onload = function () {
+            // 1获取事件源和相关元素
+            var btn = document.getElementById("btn");
+            var img = document.getElementsByTagName("img")[0];
+
+            // 2绑定事件
+            btn.onclick = function () {
+                // 3事件驱动程序
+                if(btn.innerText === "隐藏"){
+                    img.style.display = "none";
+                    btn.innerText = "显示";
+                }else{
+                    // 不是隐藏
+                    img.style.display = "block";
+                    btn.innerText = "隐藏";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

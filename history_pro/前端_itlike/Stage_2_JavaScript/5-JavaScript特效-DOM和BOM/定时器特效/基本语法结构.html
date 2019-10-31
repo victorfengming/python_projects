@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 每搁一秒执行以下,下面的语句
+    // window.setInterval("console.log('哈哈哈')", 1000);
+    // 第一种写法
+    window.setInterval("window.document.write('啊哈哈哈')", 1000);
+    // 第二种写法
+    window.setInterval(function () {
+        window.document.write("hehehe");
+    }, 2000);
+    // 第三种写法'
+    function test(){
+        console.log('哇哦');
+    };
+    window.setInterval(test, 1000);
+
+</script>
+</body>
+</html>

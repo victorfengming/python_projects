@@ -1,0 +1,77 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缓动动画</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        #box {
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            background-color: deepskyblue;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<button id="btn1">改变颜色</button>
+<button id="btn2">改变长度</button>
+<div id="box"></div>
+
+<script>
+    $("#btn1").click( function () {
+        // alert("点了没毛病");
+        // $("#box").css("background-color", "green")
+        changeCssStyle($("#box"), "background-color", "pink");
+    });
+    $("#btn2").click( function () {
+        // alert("点了没毛病");
+        // $("#box").css("width", "500px")
+        changeCssStyle($("#box"), "width", "700px");
+    });
+
+    function changeCssStyle(obj, attr, value) {
+        obj.css(attr, value);
+    }
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

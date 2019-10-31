@@ -1,0 +1,76 @@
+<!--created by xiaoming-->
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数节流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+
+    </style>
+    <!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+</head>
+<body>
+<script>
+    // var timer = null;
+    // window.onresize = function () {
+    //     clearTimeout(timer);
+    //     timer = setTimeout(function () {
+    //         console.log(document.documentElement.clientWidth);
+    //     }, 400)
+    // }
+
+    function throttle(fn, delay) {
+        // 得有一个定时器
+        timer = null;
+        return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn, delay);
+        }
+    }
+
+    window.onresize = throttle(function () {
+            console.log(document.documentElement.clientWidth);
+
+    }, 400);
+</script>
+</body>
+</html>
+
+

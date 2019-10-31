@@ -1,0 +1,124 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封闭</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+    </style>
+<!--    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+</head>
+<body>
+<button id="btn">点我就行了</button>
+
+<script type="text/html">
+    // 封闭作用域的实现形式
+    (function () {
+        var age = 18;
+        console.log(age);
+    })();
+    // 这个小括号自动的就调用了
+    //
+    ;(function () {
+        age = '哈哈哈';
+        // 这个两个age没有任何影响
+        console.log(age);
+    })();
+
+    // 能够一起使用,不会互相影响,各自有各自的封闭空间
+    // +(function () {
+    //
+    // })();
+    // -(function () {
+    //
+    // })();
+</script>
+<script>
+    (function () {
+        var btn = document.getElementById("btn");
+        var btn1 = document.getElementById("btn");
+        var btn2 = document.getElementById("btn");
+        var btn3 = document.getElementById("btn");
+        var btn4 = document.getElementById("btn");
+
+        btn.onclick = function () {
+            console.log(123);
+        }
+    })();
+
+    // w xian我先现在想要document只查找一次
+    (function () {
+        var d = document;
+        // 这样就能让这个document只是查找一次
+        var btn = d.getElementById("btn");
+        var btn1 = d.getElementById("btn");
+        var btn2 = d.getElementById("btn");
+        var btn3 = d.getElementById("btn");
+        var btn4 = d.getElementById("btn");
+
+        btn.onclick = function () {
+            console.log(123);
+        }
+    })();
+
+    (function (document) {
+        // 这样就能让这个document只是查找一次
+        var btn = document.getElementById("btn");
+        var btn1 = document.getElementById("btn");
+        var btn2 = document.getElementById("btn");
+        var btn3 = document.getElementById("btn");
+        var btn4 = document.getElementById("btn");
+        // 参数传递进来后就不能全局查找了
+
+        btn.onclick = function () {
+            console.log(123);
+        }
+    })();
+
+
+    var num = 0;
+    for (var k in window){
+        num++;
+        document.write("<br>" + k + ',' + num + "<br>");
+    }
+</script>
+</body>
+</html>
+
+
+<!--
+
+            
+        ┌─┐       ┌─┐ + +
+     ┌──┘ ┴───────┘ ┴──┐++
+     │                 │
+     │       ───       │++ + + +
+     ███████───███████ │+
+     │                 │+
+     │       ─┴─       │
+     │                 │
+     └───┐         ┌───┘
+         │         │
+         │         │   + +
+         │         │
+         │         └──────────────┐
+         │                        │
+         │                        ├─┐
+         │                        ┌─┘
+         │                        │
+         └─┐  ┐  ┌───────┬──┐  ┌──┘  + + + +
+           │ ─┤ ─┤       │ ─┤ ─┤
+           └──┴──┘       └──┴──┘  + + + +
+                  神兽保佑
+                 代码无BUG!
+    
+
+
+-->

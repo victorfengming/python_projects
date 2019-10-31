@@ -1,0 +1,99 @@
+<!--Created by victor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhihu</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    网页测试
+    <button>$.get</button>
+    <button>$.get带参数的</button>
+    <button>$.post的</button>
+    <button>$.post带参数的</button>
+    <button>ajax</button>
+    <div></div>
+    <table width="300" border="1" cellspacing="0">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>19</td>
+        </tr>
+    </table>
+    <script>
+        // ajax 当页面不刷新时,请求数据,并更新网页的局部内容
+        // $.get()方法,,单机按钮向后台发送请求
+        $('button').eq(0).click(function () {
+            // 发送请求
+            // 1.请求地址
+            // 2.回调函数,当请求发送成功后执行,用形参接受后台返回的数据
+            $.get('/daohang', function (data) {
+                console.log(data);
+                console.log(typeof data);
+                // 拿到数据后通过DOM操作,将数据跟新到页面中
+                $('div').html(data);
+            });
+
+        });
+        // 带参数的get请求
+        $('button').eq(1).click(function () {
+
+            // 带参数的get请求
+            $.get('/msg',{name:"zhangsan"},function (data) {
+                console.log(data);
+            })
+        });
+
+        $('button').eq(2).click(function () {
+            $.post('/post',function (data) {
+                console.log(data);
+                // 将拿到的返回数据,写入到html中
+                $('div').html(data)
+            })
+        });
+
+        $('button').eq(3).click(function () {
+            $.post('/msgposts',{uname:"lsisisi",age:18},function (data) {
+                console.log(data);
+                // 将返回的数据写入到ul
+                // var user = eval('('+data+')');
+                // console.log(user);
+                var el = $('table tr:first-child').clone();
+                el.find('td:eq(0)').html(data.uname);
+                el.find('td:eq(1)').html(data.age);
+                el.appendTo($('table'))
+            },'json')
+        });
+
+        $('button').eq(4).click(function () {
+            var a = 1;
+            $.ajax(
+                {
+                    url:'/ajax',       // 请求地址
+                    type:'POST',        // 请求类型
+                    data:{goos:'qiqiu',color:"red"},        // 请求携带的数据 参数 可选
+                    dataType:'json',        // 指定返回的数据类型 可选
+                    success:function (data) {       // 请求成功时自动调用 可选
+                        console.log(data);
+                        a++;
+                        console.log(a);
+                    },
+                    error:function () {     //请求失败时自动调用 可选
+                        console.log('白扯');      //
+                    },
+                    // timeout:3000,
+                    // async:true,
+                }
+            );
+            console.log('ajax外边', a);
+        })
+    </script>
+</body>
+</html>

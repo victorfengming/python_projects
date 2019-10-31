@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #e_coder{
+            width: 50px;
+            height: 50px;
+            background: url("images/e_coder_selected.png") no-repeat;
+
+            position: fixed;
+            top: 40%;
+            left: 0;
+
+            cursor: pointer;
+
+        }
+
+        #e_app{
+            position: absolute;
+            left: 50px;
+            top: -50px;
+            /*隐藏*/
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="e_coder" >
+        <div id="e_app">
+            <img src="images/e_coder.jpg" alt="公众号">
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            // 先拿到东西
+            // 获取响应的标签
+            var e_coder = document.getElementById("e_coder");
+            var e_app = document.getElementById("e_app");
+
+            // 监听鼠标进入
+            e_coder.onmouseover = function () {
+                // 鼠标进入的事情
+                // 改变背景图片
+                // 拿到bgc,才能修改
+                this.style.background = 'url("images/e_coder_selected.png") no-repeat;';
+                // 显示隐藏的二维码
+                e_app.style.display = "block";
+
+
+
+            };
+            // 监听鼠标的离开
+            e_coder.onmouseout = function () {
+                // 鼠标离开事情
+                // 改变背景图片
+                this.style.background = 'url("images/e_coder_normal.png") no-repeat;';
+                // 隐藏二维码
+                e_app.style.display = "none";
+
+            };
+        }
+
+    </script>
+
+</body>
+</html>

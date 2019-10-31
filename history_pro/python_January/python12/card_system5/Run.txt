@@ -1,0 +1,78 @@
+D:\Python37\python.exe E:/PycharmProjects/python_January/python11/card_system4/card_main.py
+╔═══════════════════════════════╗
+║   card manage system v3.8.1c  ║
+╠═══════════════════════════════╣
+║ 1: new a card                 ║
+║ 2: display all cards          ║
+║ 3: search a card              ║
+║ 4: change a card              ║
+║ 5: delete a card              ║
+║ 0: exit the system            ║
+╚═══════════════════════════════╝
+请选择操作功能:1
+您选择的操作是:1
+请输入名字:xiaoming
+请输入QQ号码:510510280
+请输入手机号:13940206091
+请输入邮箱:victor@foxmail.com
+╔═══════════════════════════════╗
+║   card manage system v3.8.1c  ║
+╠═══════════════════════════════╣
+║ 1: new a card                 ║
+║ 2: display all cards          ║
+║ 3: search a card              ║
+║ 4: change a card              ║
+║ 5: delete a card              ║
+║ 0: exit the system            ║
+╚═══════════════════════════════╝
+请选择操作功能:2
+您选择的操作是:2
+╔═══════════════════╦═══════════════════╦═══════════════════╦═══════════════════╗
+║ name              ║ QQ                ║ phone             ║ email             ║
+╠═══════════════════╬═══════════════════╬═══════════════════╬═══════════════════╣
+║ xiaoming          ║ 510510280         ║ 13940206091       ║ victor@foxmail.com║
+╚═══════════════════╩═══════════════════╩═══════════════════╩═══════════════════╝
+╔═══════════════════════════════╗
+║   card manage system v3.8.1c  ║
+╠═══════════════════════════════╣
+║ 1: new a card                 ║
+║ 2: display all cards          ║
+║ 3: search a card              ║
+║ 4: change a card              ║
+║ 5: delete a card              ║
+║ 0: exit the system            ║
+╚═══════════════════════════════╝
+请选择操作功能:1
+您选择的操作是:1
+请输入名字:xiaoqiang
+请输入QQ号码:1342416749
+请输入手机号:13940148324
+请输入邮箱:sqji1997@gmail.com
+╔═══════════════════════════════╗
+║   card manage system v3.8.1c  ║
+╠═══════════════════════════════╣
+║ 1: new a card                 ║
+║ 2: display all cards          ║
+║ 3: search a card              ║
+║ 4: change a card              ║
+║ 5: delete a card              ║
+║ 0: exit the system            ║
+╚═══════════════════════════════╝
+请选择操作功能:2
+您选择的操作是:2
+╔═══════════════════╦═══════════════════╦═══════════════════╦═══════════════════╗
+║ name              ║ QQ                ║ phone             ║ email             ║
+╠═══════════════════╬═══════════════════╬═══════════════════╬═══════════════════╣
+║ xiaoming          ║ 510510280         ║ 13940206091       ║ victor@foxmail.com║
+║ xiaoqiang         ║ 1342416749        ║ 13940148324       ║ sqji1997@gmail.com║
+╚═══════════════════╩═══════════════════╩═══════════════════╩═══════════════════╝
+╔═══════════════════════════════╗
+║   card manage system v3.8.1c  ║
+╠═══════════════════════════════╣
+║ 1: new a card                 ║
+║ 2: display all cards          ║
+║ 3: search a card              ║
+║ 4: change a card              ║
+║ 5: delete a card              ║
+║ 0: exit the system            ║
+╚═══════════════════════════════╝

@@ -1,0 +1,48 @@
+浏览器
+	浏览器概念
+		浏览器是指可以显示网页服务器或者文件系统的HTML文件（标准通用标记语言的一个应用）内容，并让用户与这些文件交互的一种软件。
+		它用来显示在万维网或局域网等内的文字、图像及其他信息。这些文字或图像，可以是连接其他网址的超链接，用户可迅速及轻易地浏览各种信息。大部分网页为HTML格式。
+	常用浏览器
+		QQ浏览器
+		Internet Explorer
+		Firefox
+		Safari
+		Opera
+		Google Chrome
+		猎豹浏览器
+		360浏览器
+		UC浏览器
+		傲游浏览器
+		世界之窗浏览器
+		红芯浏览器 (前段时间的新闻)
+	浏览器内核
+		内核简介
+			浏览器最重要或者说核心的部分是“Rendering Engine”，可大概译为“渲染引擎”，不过我们一般习惯将之称为“浏览器内核”。
+			负责对网页语法的解释（如标准通用标记语言下的一个应用HTML、JavaScript）并渲染（显示）网页
+			通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。
+		五大浏览器
+			IE浏览器
+				IE是微软公司旗下浏览器，是目国内用户量最多的浏览器。
+			Opera浏览器
+				Opera是挪威Opera Software ASA公司旗下的浏览器。
+			Safari浏览器
+				苹果公司在苹果手机上开发Safari浏览器，利用自己得天独厚的手机市场份额使Safari浏览器迅速成为世界主流浏览器。
+			Firefox浏览器
+				Firefox浏览器使Mozilla公司旗下浏览器，也是刚才提到的网景公司后来的浏览器。
+			Chrome浏览器
+				Chrome浏览器是google旗下的浏览器。
+		内核分类
+			Trident（也称IE内核）
+			webkit
+			Blink
+			Gecko
+		浏览器所使用的内核
+			1、IE浏览器内核：Trident内核，也是俗称的IE内核； 
+			2、Chrome浏览器内核：统称为Chromium内核或Chrome内核，以前是Webkit内核，现在是Blink内核； 
+			3、Firefox浏览器内核：Gecko内核，俗称Firefox内核； 
+			4、Safari浏览器内核：Webkit内核； 
+			5、Opera浏览器内核：最初是自己的Presto内核，后来是Webkit，现在是Blink内核； 
+			6、360浏览器、猎豹浏览器内核：IE+Chrome双内核； 
+			7、搜狗、遨游、QQ浏览器内核：Trident（兼容模式）+Webkit（高速模式）； 
+			8、百度浏览器、世界之窗内核：IE内核； 
+			9、2345浏览器内核：以前是IE内核，现在也是IE+Chrome双内核；

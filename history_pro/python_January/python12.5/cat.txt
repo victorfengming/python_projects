@@ -1,0 +1,37 @@
+# 分页爬取网页内容
+    单页函数:
+        url参数,page页数参数
+    输入页数:
+        起始页数和结束页数,转成int类型便于计算
+    页数条件控制:
+        for in 循环在起始和结束页码中调用单页函数进行爬取
+# 通过url下载图片到本地
+    1.安装库urllib:
+        方法1:
+            cmd中 运行'pip install urllib'
+        方法2:
+            pycharm中 点击File->settings->project->搜索urllib,点击install package
+    2.导入urllib中的request库
+    3.urlretrieve方法:
+        格式1:
+            import urllib.request
+            urllib.request.urlretrieve(url,'文件名')
+        格式2:
+            from urllib import request
+            request.urlretrieve(url,'文件名')
+# 手动输入url参数进行爬取
+    1.安装库urllib:
+        参考上面安装步骤
+    2.导入urllib.parse
+    from urllib.parse import urlencode
+    import urllib.parse
+    3.urlencode()使用
+        格式1:
+    	    res = urlencode(keyword,encoding='utf8')
+        格式2:
+    	    res = urllib.parse.urlencode(keyword,encoding='utf8')
+
+# url的乱码问题:
+    需要在连接后面加上网页原有的&enc=utf-8,来指定参数的编码方式
+
+

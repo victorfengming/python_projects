@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="icon" src="img/icon_01.png" alt="">
+    <p></p>
+    <button id="prev">上一张</button>
+    <button id="next">下一张</button>
+    <!--注意处理边界值-->
+    <!--这个就类似于轮播图,只是少个定时器而已-->
+    <script>
+        window.onload = function () {
+            // 获取需要的标签
+            var icon = document.getElementById("icon");
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+
+            // 监听按钮的点击
+            var maxIndex = 9;
+            var minIndex = 1;
+            var currentIndex = minIndex;
+            prev.onclick = function () {
+
+                if (currentIndex === minIndex){ //边界值
+                    currentIndex = maxIndex;
+                }else{
+                    //正常情况
+                    currentIndex--;
+                }
+                // alert("点击了下一张")
+                icon.setAttribute("src", "img/icon_0" + currentIndex + ".png");
+
+                console.log(icon.src);
+            };
+            next.onclick = function () {
+                if (currentIndex === maxIndex){ //边界值
+                    currentIndex = minIndex;
+                }else{
+                    //正常情况
+                    currentIndex++;
+                }
+                // alert("点击了下一张")
+                icon.setAttribute("src", "img/icon_0" + currentIndex + ".png");
+                console.log(icon.src);
+
+            };
+        }
+    </script>
+</body>
+</html>

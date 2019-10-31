@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ead5d5e0-3e23-436d-8ac3-576248017fd7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python_lkjy$1.coverage" NAME="案例1 Coverage Results" MODIFIED="1548314704582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能4/文件操作" />
+    <SUITE FILE_PATH="coverage/python_lkjy$return.coverage" NAME="生成器return Coverage Results" MODIFIED="1548378906961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器" />
+    <SUITE FILE_PATH="coverage/python_lkjy$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1548468055385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+    <SUITE FILE_PATH="coverage/python_lkjy$3.coverage" NAME="模块检索路径修改方式3 Coverage Results" MODIFIED="1548485023852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+    <SUITE FILE_PATH="coverage/python_lkjy$other2.coverage" NAME="other2 Coverage Results" MODIFIED="1548487329158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+    <SUITE FILE_PATH="coverage/python_lkjy$test.coverage" NAME="test Coverage Results" MODIFIED="1548466357286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+    <SUITE FILE_PATH="coverage/python_lkjy$macpath.coverage" NAME="macpath Coverage Results" MODIFIED="1548486621564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+    <SUITE FILE_PATH="coverage/python_lkjy$.coverage" NAME="可选导入 Coverage Results" MODIFIED="1548492927751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+    <SUITE FILE_PATH="coverage/python_lkjy$GUI.coverage" NAME="GUI概念 Coverage Results" MODIFIED="1548289626124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-GUI编程" />
+    <SUITE FILE_PATH="coverage/python_lkjy$close.coverage" NAME="生成器close Coverage Results" MODIFIED="1548378218028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器" />
+    <SUITE FILE_PATH="coverage/python_lkjy$demo.coverage" NAME="demo Coverage Results" MODIFIED="1548471832360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+    <SUITE FILE_PATH="coverage/python_lkjy$2.coverage" NAME="模块检索路径修改方式2 Coverage Results" MODIFIED="1548475234250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+    <SUITE FILE_PATH="coverage/python_lkjy$from.coverage" NAME="from用法 Coverage Results" MODIFIED="1548468806565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能4/文件操作/案例1.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能4/文件操作/demo.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/t_module.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/a_module.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/包和模块的概念.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/1.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/2.py" />
+        <option value="$PROJECT_DIR$/python-GUI编程/pyqt1.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器close.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器return.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能3/函数作用域/概念/作用域概念.py" />
+        <option value="$PROJECT_DIR$/玩转H5大前端-HTML+CSS/网页的结构" />
+        <option value="$PROJECT_DIR$/玩转H5大前端-HTML+CSS/demo.html" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/常规导入/sub_xxx.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/重复模块导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/sub_p/Tool.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/Tool.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/__init__.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/带包的导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/demo.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo1.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/test.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/Tool2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/from用法.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/other.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/导入模块底层.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/sys.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/fumatch.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/导入模块怎么找.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径sys.path.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/dmeo.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式3.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式1.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径第二次导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/局部导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/macpath.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/测试/sys.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/覆盖导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/循环导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other3.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other可选2.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other可选3.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/可选导入.py" />
+        <option value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/包内导入.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python_lkjy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_lkjy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_lkjy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_lkjy" type="462c0819:PsiDirectoryNode" />
+              <item name="撩课-python大数据人工智能6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_lkjy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_lkjy" type="462c0819:PsiDirectoryNode" />
+              <item name="撩课-python大数据人工智能6" type="462c0819:PsiDirectoryNode" />
+              <item name="导入包和模块的方式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_lkjy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_lkjy" type="462c0819:PsiDirectoryNode" />
+              <item name="撩课-python大数据人工智能6" type="462c0819:PsiDirectoryNode" />
+              <item name="导入包和模块的方式" type="462c0819:PsiDirectoryNode" />
+              <item name="导入模块的常见场景" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_lkjy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_lkjy" type="462c0819:PsiDirectoryNode" />
+              <item name="撩课-python大数据人工智能6" type="462c0819:PsiDirectoryNode" />
+              <item name="导入包和模块的方式" type="462c0819:PsiDirectoryNode" />
+              <item name="导入模块的常见场景" type="462c0819:PsiDirectoryNode" />
+              <item name="first_package" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my_directory" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\python_lkjy\撩课-python大数据人工智能6\导入包和模块的方式\导入模块的常见场景\测试" />
+      <recent name="E:\PycharmProjects\python_lkjy\撩课-python大数据人工智能6\导入包和模块的方式\导入模块的常见场景" />
+      <recent name="E:\PycharmProjects\python_lkjy\撩课-python大数据人工智能6\包和模块\p1" />
+      <recent name="E:\PycharmProjects\python_lkjy\撩课-python大数据人工智能6\包和模块\p1\sub_p" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.macpath">
+    <configuration name="循环导入" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/循环导入.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="可选导入" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/可选导入.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="局部导入" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/局部导入.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="覆盖导入" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/覆盖导入.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="包和模块的概念" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/包和模块的概念.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="macpath" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/macpath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="other2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_lkjy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.other2" />
+        <item itemvalue="Python.循环导入" />
+        <item itemvalue="Python.macpath" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ead5d5e0-3e23-436d-8ac3-576248017fd7" name="Default Changelist" comment="" />
+      <created>1548245640206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548245640206</updated>
+      <workItem from="1548245644007" duration="1993000" />
+      <workItem from="1548289539765" duration="550000" />
+      <workItem from="1548310663156" duration="2601000" />
+      <workItem from="1548321388817" duration="3308000" />
+      <workItem from="1548332001162" duration="84000" />
+      <workItem from="1548377098561" duration="1303000" />
+      <workItem from="1548378692016" duration="1677000" />
+      <workItem from="1548414701765" duration="1187000" />
+      <workItem from="1548463956296" duration="17451000" />
+      <workItem from="1548492379455" duration="980000" />
+      <workItem from="1548635546125" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31160000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31423897" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能4/文件操作/案例1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/t_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#147#321#0" />
+            <element signature="e#340#514#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/a_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#150#191#0" />
+            <element signature="e#208#212#0" />
+            <element signature="e#229#233#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/包和模块的概念.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-GUI编程/pyqt1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器next.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器close.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="8" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/玩转H5大前端-HTML+CSS/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/玩转H5大前端-HTML+CSS/网页的结构">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能3/函数作用域/概念/作用域概念.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能3/函数高级/生成器/生成器return.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/重复模块导入.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/import中的as用法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/testt/demo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo1.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo2.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/带包的导入.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/Tool2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/p1/sub_p/sub_xxx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/from用法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/other.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/导入模块底层.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/fumatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/导入模块怎么找.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/sys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径sys.path.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/demo.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式1.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式2.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径修改方式3.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/包和模块/模块检索路径第二次导入.py" />
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块具体做了什么/导入模块底层.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/from语句导入/重复模块导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/from语句导入/带包的导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/从哪个位置找到需要的模块/导入模块怎么找.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/局部导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/macpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/测试/sys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/覆盖导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/循环导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other可选2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/可选导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/包内导入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other可选3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/撩课-python大数据人工智能6/导入包和模块的方式/导入模块的常见场景/other2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

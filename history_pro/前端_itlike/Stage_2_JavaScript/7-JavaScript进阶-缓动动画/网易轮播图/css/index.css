@@ -1,0 +1,126 @@
+/**
+ * Created by xiaoming
+ * 创建日期: 2019/4/4
+ * 创建时间: 21:54
+ */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body {
+
+}
+
+img {
+    vertical-align: top;
+}
+
+.slider {
+    /*设置宽度和高度*/
+    width: 310px;
+    height: 260px;
+    position: relative;
+    margin: 100px auto;
+    /*background-color: blue;*/
+    overflow: hidden;
+}
+
+.slider-scroll {
+    position: relative;
+    width: 310px;
+    height: 220px;
+    /*background-color: green;*/
+}
+
+.slider-main {
+    width: 620px;
+    height: 220px;
+    background-color: palevioletred;
+}
+
+.slider-main-img {
+    width: 310px;
+    height: 220px;
+    position: absolute;
+}
+
+.slider-main-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-ctl {
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.slider-ctl-prev, .slider-ctl-next {
+    background: url("../images/icon.png");
+    width: 10px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+
+}
+
+.slider-ctl-prev {
+    left: 5px;
+}
+
+.slider-ctl-next {
+    background-position: -18px -45px;
+    right: 5px;
+
+}
+
+.slider-ctl-icon {
+    width: 24px;
+    height: 5px;
+    background: url("../images/icon.png") no-repeat -24px -790px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.current{
+    background-position: 0 -770px;
+}
+/*
+
+                            _ooOoo_
+                           o8888888o
+                           88" . "88
+                           (| -_- |)
+                            O\ = /O
+                        ____/`---'\____
+                      .   ' \\| | `.
+                       / \\||| : ||| \
+                     / _||||| -:- |||||- \
+                       | | \\\ - / | |
+                     | \_| ''\---/'' | |
+                      \ .-\__ `-` ___/-. /
+                   ___`. .' /--.--\ `. . __
+                ."" '< `.___\_<|>_/___.' >'"".
+               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+                 \ \ `-. \_ __\ /__ _/ .-` / /
+         ======`-.____`-.___\_____/___.-`____.-'======
+                            `=---='
+
+         .............................................
+                  佛祖保佑             永无BUG
+          佛曰:
+                  写字楼里写字间，写字间里程序员；
+                  程序人员写程序，又拿程序换酒钱。
+                  酒醒只在网上坐，酒醉还来网下眠；
+                  酒醉酒醒日复日，网上网下年复年。
+                  但愿老死电脑间，不愿鞠躬老板前；
+                  奔驰宝马贵者趣，公交自行程序员。
+                  别人笑我忒疯癫，我笑自己命太贱；
+                  不见满街漂亮妹，哪个归得程序员？
+         .............................................
+
+*/

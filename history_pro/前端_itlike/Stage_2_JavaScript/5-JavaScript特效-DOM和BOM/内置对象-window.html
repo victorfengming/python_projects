@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置对象-window</title>
+</head>
+<body>
+<!--    1.所有全局的变量都是window的属性-->
+<!--    2.所有全局的函数都window的方法-->
+<script type="text/html">
+    // <!--    1.所有全局的变量都是window的属性-->
+// <!--    2.所有全局的函数都window的方法-->
+    var str = '张三';
+    console.log(str);
+    console.log(window.str);
+
+    function func() {
+        var age = 19;
+        console.log(111);
+    }
+
+    console.log(window.age);
+    func();
+    window.func();
+</script>
+<script>
+    console.log(111);
+    console.log(222);
+    // 这里先打一个断点,然后我想要做一个动态的跳转
+    // alert(1);
+    // 动态跳转
+    window.location.href = "https://cn.bing.com/";
+    console.log(333);
+    console.log(444);
+    console.log(555);
+</script>
+
+</body>
+</html>

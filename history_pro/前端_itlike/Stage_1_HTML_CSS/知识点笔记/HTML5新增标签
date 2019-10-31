@@ -1,0 +1,19 @@
+HTML5中新增标签
+	语义化标签
+		header
+		section
+		footer
+		article
+		nav
+	媒介标签
+		video
+		audio
+	表单控件标签
+		calendar
+		date
+		time
+		email
+		url
+		search
+	绘图标签
+		canvas

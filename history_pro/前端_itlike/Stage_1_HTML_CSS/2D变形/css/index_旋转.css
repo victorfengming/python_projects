@@ -1,0 +1,18 @@
+img{
+    width: 50%;
+    margin: 100px auto;
+    border: 10px solid red;
+    border-radius: 50%;
+    /*设置过度效果*/
+    transition: all 3s linear;
+    margin-left: 100px;
+}
+
+img:active{
+    /*transform: rotateX(-180deg);*/
+    /*transform: rotateY(-180deg);*/
+    transform: rotate(-1800deg);
+}
+
+
+

@@ -1,0 +1,65 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            width: 90px;
+            height: 90px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">开始动画</button>
+    <div id="box"></div>
+
+<script>
+    window.onload = function () {
+        //1.获取徐亚欧的标签
+        var btn = document.getElementById("btn");
+        var box = document.getElementById("box");
+
+        // 2定义变量
+
+        var timer = null, begin = 0, step = 50, target = 600;
+
+        // 3.监听按钮的点击
+
+        btn.onclick = function () {
+            //
+            // 3.1 清除定好私企
+            clearInterval(timer);
+            // 3.2设置定时器
+            timer = setInterval(function () {
+                //相应的控制
+                // 相加
+                begin += step;
+                // console.log(begin);
+
+                // 终止条>件控制
+                if(begin > target){
+                    //清除定时器
+                    begin = target;
+                    clearInterval(timer);
+                }
+                console.log(begin);
+                //动起来
+                box.style.marginLeft = begin + 'px';
+
+            }, 100)
+
+
+        }
+    }
+</script>
+</body>
+</html>

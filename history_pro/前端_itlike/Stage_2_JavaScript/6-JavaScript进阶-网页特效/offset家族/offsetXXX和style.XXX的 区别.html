@@ -1,0 +1,38 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+<script>
+    var box = document.getElementById("box");
+    console.log(box.offsetLeft);
+    console.log(box.style.left);
+
+    box.style.left = 200 + 'px';
+    //这个style只能获取行内的
+    window.onload = function () {
+        //
+
+    }
+</script>
+</body>
+</html>

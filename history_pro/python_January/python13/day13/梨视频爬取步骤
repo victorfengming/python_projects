@@ -1,0 +1,25 @@
+# 梨视频 www.pearvideo.com
+
+# 爬取步骤
+1. 确定URL地址              https://www.pearvideo.com/category_8
+https://www.pearvideo.com/video_1512129  ()
+https://www.pearvideo.com/video_1512192
+https://www.pearvideo.com/video_1512138
+    发送请求,获取响应
+    正则匹配获取页面video_id
+2. 获取视频播放
+    获取video_1512138  将现有数据处理后形成新的视频播放url地址
+
+3. 获取视频下载地址
+    发送请求,获取响应
+    匹配下载地址
+
+4. 获取视频标题
+    匹配视频标题
+
+5. 下载并保存                导入urllib.request中的urlretrieve(下载地址,保存地址)
+
+import requests
+import re
+from urllib.request import urlretrieve
+import os

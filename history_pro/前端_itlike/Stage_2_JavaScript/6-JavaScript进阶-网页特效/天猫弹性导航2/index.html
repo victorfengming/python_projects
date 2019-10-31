@@ -1,0 +1,112 @@
+<!--created by xiaoming-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        #nav {
+            width: 900px;
+            height: 63px;
+            background: url("images/doubleOne.png") no-repeat right center #fff;
+            border-radius: 5px;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        #nav ul {
+            position: relative;
+        }
+
+        #nav ul li {
+            float: left;
+            width: 88px;
+            height: 63px;
+            text-align: center;
+            line-height: 63px;
+            cursor: pointer;
+        }
+
+        #t_mall {
+            width: 88px;
+            height: 63px;
+            /*background-color: red;*/
+            background: url("images/tMall.png") no-repeat;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<nav id="nav">
+    <span id="t_mall"></span>
+    <ul>
+        <li>双十一狂</li>
+        <li>服装会场</li>
+        <li>数码家电</li>
+        <li>家具建材</li>
+        <li>母婴童装</li>
+        <li>手机会场</li>
+        <li>美妆会场</li>
+        <li>进口会场</li>
+        <li>叽里呱啦</li>
+
+    </ul>
+
+</nav>
+<script>
+    window.onload = function () {
+        // 1.获取需要的标签
+        var nav = $("nav");
+        var tm = nav.children[0];
+        var ul = nav.children[1];
+        var allLis = ul.children;
+
+        // 定义记录鼠标点击的位置变量
+        var beginX = 0;
+        // 2.遍历所有的li标签
+        for(var i=0; i<allLis.length; i++){
+            var li = allLis[i];
+            // 2.1监听鼠标进入
+            li.onmouseover = function () {
+                // 获取左边的距离
+
+                end = this.offsetLeft;
+                console.log("进入了")
+            };
+            // 2.2监听鼠标按下
+            li.onmousedown = function () {
+                beginX = this.offsetLeft;
+                console.log("按个球")
+            };
+            // 2.3监听鼠标离开事件
+            li.onmouseout = function () {
+                end = beginX;
+                console.log("走一个")
+            };
+
+        }
+        // 3实现缓动动画
+        // 这个缓动动画是有公式的,只需要制定好,其实值和结束值,就OK
+        var begin = 0, end = 0;
+        setInterval(function () {
+            begin = begin + (end - begin) * 0.1;
+            tm.style.left = begin + 'px';
+        }, 10);
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+</body>
+</html>

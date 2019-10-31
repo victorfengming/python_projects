@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位demo</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*position: static;*/
+            /*写这个static是能把层级提升,不会有任何的变化*/
+
+        }
+
+        #box2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            left: 100px;
+            top: 120px;
+        }
+
+        #box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: static;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id = "box1">box1</div>
+    <div id = "box2">box1</div>
+    <div id = "box3">box1</div>
+</body>
+</html>
